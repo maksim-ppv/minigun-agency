@@ -1,0 +1,134 @@
+$vw-viewport: 1680 
+
+    
+@function vw($font)
+    $vw-content: $vw-viewport*0.01*1px
+    @return $font / $vw-content*1vw
+
+    
+    
+*
+    box-sizing: border-box
+    margin: 0
+
+body
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    height: 100%
+    font-family: Gilroy
+    font-weight: 400
+    font-size: vw(20px)
+    color: #ffffff
+    // overflow-x: hidden
+.overflow-hidden
+    width: 100%
+    overflow: hidden
+.container
+    width: vw(1400px)
+    margin: auto 
+@media (max-width: 991px)
+    .container
+        width: vw(1445px)
+@media (max-width: 568px)
+    .container
+        width: vw(1470px)
+button:active, button:focus
+    outline: none !important
+
+button::-moz-focus-inner
+    border: 0 !important
+button
+    border: none
+    background: none
+    cursor: pointer
+.wrapper
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+.fullscreen
+    min-height: 100vh
+    display: flex
+
+
+.ibg
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    position: relative
+.ibg
+    img
+        width: 0
+        height: 0
+        position: absolute
+        top: 0
+        left: 0
+        opacity: 0
+        visibility: hidden
+
+.title
+    font-weight: 300
+    font-size: vw(36px)
+    line-height: vw(43px)
+    text-align: center
+    position: relative
+    margin-bottom: vw(11px)
+    display: table
+    margin: auto
+    padding: 0px vw(180px)
+    
+    strong
+        font-weight: 500
+    &:before
+        content: ''
+        width: vw(125px)
+        top: 60%
+        left: 0
+        height: 2px
+        position: absolute
+        background: url('../img/icon/decor-title.svg') center / cover no-repeat
+    &:after
+        content: ''
+        width: vw(125px)
+        height: 2px
+        top: 60%
+        right: 0
+        transform: rotate(180deg)
+        position: absolute
+        background: url('../img/icon/decor-title.svg') center / cover no-repeat
+        
+    
+.title_w
+    color: #FFFFFF
+
+.subtitle
+    display: block
+    text-align: center
+    font-size: vw(32px)
+    line-height: vw(38px)
+.subtitle_g
+    color: #D6B56E
+
+.text 
+    font-weight: 300
+    font-size: vw(18px)
+    line-height: vw(22px)
+    strong
+        font-weight: 500
+.text_w
+    color: #FFFFFF
+.row
+    display: flex
+    justify-content: space-between
+    align-items: center
+.item__25
+    flex-direction: column
+    display: flex
+    flex: 0 1 25%
+$maxWidth: 1920
+
+@mixin adaptiv-font($pcSize, $mobSize) 
+    $addSize: $pcSize - $mobSize
+    $maxWidth: $maxWidth - 320
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}))
+
+
+

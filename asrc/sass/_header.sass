@@ -1,0 +1,203 @@
+
+// указание размера адаптивного шрифта
+// @include adaptiv-font(50,20)
+
+.header
+    background: url('../img/header/bg.png') center/cover no-repeat
+    height: vw(2500px)
+
+//===============================================================
+
+.navbar
+    padding: vw(30px) 0px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+.navbar__logo
+    img
+        width: vw(200px)
+        height: vw(50px)
+.navbar-slogan
+    flex: 1 1 auto 
+    max-width: vw(284px)
+    font-style: italic
+    font-weight: 300
+    font-size: vw(16px)
+    line-height: vw(19px)
+    text-align: center
+    margin: 0px auto
+    
+.navbar__contact 
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+.navbar-phone
+    font-weight: bold
+    font-size: vw(20px)
+    line-height: vw(25px)
+    color: #D6B56E
+.navbar__callback
+    font-size: vw(18px)
+    line-height: vw(22px)
+    border-bottom: 1px dashed #FFFFFF
+    color: #FFFFFF
+
+//===============================================================
+
+.header__body
+    padding: vw(50px) 0px
+    position: relative 
+.header__block-1 
+.block-1 
+    position: relative
+    padding-bottom: vw(100px)
+.block-1__bg
+    position: absolute
+    right: 0
+    top: 0
+.img__macbook
+    top: vw(15px)
+    img
+        width: vw(816px)
+        height: vw(676px)
+.img__circle
+    right: vw(40px)
+    img
+        animation: size 1.5s linear infinite alternate
+        width: vw(660px)
+        height: vw(660px)
+.block-1__title 
+    font-weight: bold
+    font-size: vw(50px)
+    line-height: vw(62px)
+    max-width: vw(790px)
+    padding-bottom: vw(47px)
+    @media (max-width: 576.98px)
+        font-size: vw(18px)
+        line-height: vw(22px)
+    span
+        display: block
+        font-weight: 300
+        font-size: vw(40px)
+        line-height: vw(48px)
+
+.block-1__subtitle
+    font-weight: 300
+    padding-bottom: vw(47px)
+    font-size: vw(28px)
+    line-height: vw(34px)
+    color: #D6B56E
+    display: block
+.strings
+.block-1__strings
+    padding-bottom: vw(47px)
+.strings__title
+    font-weight: 500
+    font-size: vw(24px)
+    line-height: vw(29px)
+    padding-bottom: vw(15px)
+    display: block
+.strings__block 
+.string 
+    display: flex
+    align-items: center
+    padding-bottom: vw(10px)
+    &:last-child
+        padding-bottom: 0px
+    img
+        width: vw(21px)
+        height: vw(16px)
+        margin-right: vw(19px)
+.string__text 
+    font-weight: 300
+    font-size: vw(20px)
+    line-height: vw(30px)
+.block-1__text
+    font-weight: 300
+    font-size: vw(20px)
+    line-height: vw(24px)
+    color: #D6B56E
+    display: block
+    padding-bottom: vw(25px) 
+.block-1__buttons 
+    display: flex
+.button 
+    width: vw(350px)
+    height: vw(75px)
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    border-radius: 16px/50px
+    position: relative
+.button-gold 
+    font-size: vw(20px)
+    line-height: vw(24px)
+    text-transform: uppercase
+    color: #4F4531
+    text-shadow: 0px 1px 0px #FFF3D8
+    background: linear-gradient(180deg, #FFE5AC 0%, #B99C5D 100%)
+    position: relative
+    border: vw(3px) solid #FFE1A0
+    box-shadow: 0 4px 1px 0 #8A774E
+    transition: 0.3s all
+    &:hover
+        filter: drop-shadow(0px 0px 15px #D6B56E)
+        transition: 0.3s all
+.block-1__button-gold
+    margin-right: vw(24px)
+.button-transparent 
+    font-weight: 300
+    font-size: vw(18px)
+    line-height: vw(22px)
+    border: 1px solid #FFFFFF
+    color: #FFFFFF
+    
+@keyframes size
+    0%
+       transform: scale(1) 
+    100%
+        transform: scale(1.15) 
+        
+
+//====================================================================================================================================
+
+
+
+
+.header__block-2 
+.block-2 
+.block-2__subtitle
+    padding-bottom: vw(59px)
+.block-2__content 
+    padding-bottom: vw(59px)
+  
+.block-2__item 
+    align-items: center
+    display: flex
+    flex-direction: column
+    img
+        width: vw(200px)
+        height: vw(170px)
+        transition: 0.7s all
+        &:hover
+            transform: scale(1.1)
+            transition: 0.7s all
+        
+.block-2_1
+    width: vw(258px)
+.block-2_2
+    width: vw(366px)
+.block-2_3
+    width: vw(279px)
+.block-2_4
+    width: vw(259px)
+    
+.block-2__text 
+    text-align: center
+.block-2__button 
+    display: flex
+    justify-content: center
+.block-2__button-gold 
+    
