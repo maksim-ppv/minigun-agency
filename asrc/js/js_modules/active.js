@@ -154,14 +154,16 @@ if($('.design__items').length>0){
 // wow.init();
 
 // parallax
-var scene = document.querySelectorAll('.parallax');
-	scene.forEach(item=>{
-		const picture = item.querySelector('picture');
-		picture.classList.toggle('parallax');
-		var parallaxInstance = new Parallax(picture);
-	})
 
+if(window.matchMedia('(min-width: 991px)').matches){
+		var scene = document.querySelectorAll('.parallax');
+			scene.forEach(item=>{
+				const picture = item.querySelector('picture');
+				picture.classList.toggle('parallax');
+				var parallaxInstance = new Parallax(picture);
+			})
 
+		}
 // //ibg
 
 function ibg(){
