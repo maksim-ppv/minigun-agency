@@ -1,6 +1,9 @@
 .parallax    
     position: absolute
     width: 100%
+    height: 100%
+.header-bg
+    overflow: hidden
     height: vw(2400px)
     @media (max-width: 991.98px)
         height: vw2(2170px)
@@ -8,8 +11,6 @@
         background-size: 100% 100%
     @media (max-width: 576.98px)
         height: vw3(1770px)
-.header-bg
-    overflow: hidden
 .bullet_1
     left: -4% !important
     top: 13% !important
@@ -29,17 +30,33 @@
         display: none
 .bullet_2
     left: 85% !important
-    top: 96% !important
+    top: vw(-100px) !important
     width: vw(172px)
     height: vw(203px)
     @media (max-width: 991.98px)
         position: absolute
         width: vw2(106px)
         height: vw2(125px)
-        top: 95% !important
+        top: vw2(-60px) !important
         left: 80% !important
     @media (max-width: 576.98px)
-        top: 95% !important
-        left: 70% !important
+        top: vw3(-50px) !important
+        left: 65% !important
         width: vw3(86px)
         height: vw3(102px)
+.bullet_3
+    left: 83% !important
+    top: vw(-100px) !important
+    width: vw(189px)
+    height: vw(180px)
+    @media (max-width: 991.98px)
+        position: absolute
+        width: vw2(107px)
+        height: vw2(101px)
+        top: vw2(-40px) !important
+        left: 78% !important
+    @media (max-width: 576.98px)
+        top: vw3(-30px) !important
+        left: 70% !important
+        width: vw3(79px)
+        height: vw3(74px)

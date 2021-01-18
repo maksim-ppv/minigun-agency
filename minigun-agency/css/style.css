@@ -255,6 +255,16 @@ button {
   color: #FFFFFF;
 }
 
+.title_b {
+  color: #191919;
+}
+
+.small-title {
+  font-weight: 500;
+  font-size: 2.14286vw;
+  line-height: 2.61905vw;
+}
+
 .subtitle {
   display: block;
   text-align: center;
@@ -264,6 +274,12 @@ button {
 
 .subtitle_g {
   color: #D6B56E;
+}
+
+.small-subtitle {
+  font-weight: 300;
+  font-size: 1.78571vw;
+  line-height: 2.14286vw;
 }
 
 .text {
@@ -983,11 +999,12 @@ button {
 .parallax {
   position: absolute;
   width: 100%;
-  height: 142.85714vw;
+  height: 100%;
 }
 
 .header-bg {
   overflow: hidden;
+  height: 142.85714vw;
 }
 
 .bullet_1 {
@@ -1008,9 +1025,154 @@ button {
 
 .bullet_2 {
   left: 85% !important;
-  top: 96% !important;
+  top: -5.95238vw !important;
   width: 10.2381vw;
   height: 12.08333vw;
+}
+
+.bullet_3 {
+  left: 83% !important;
+  top: -5.95238vw !important;
+  width: 11.25vw;
+  height: 10.71429vw;
+}
+
+.white-1 {
+  padding-top: 8.80952vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.cars {
+  padding-left: 4.7619vw;
+}
+
+.cars__subtitle {
+  padding-bottom: 3.86905vw;
+  display: block;
+}
+
+.cars__content {
+  padding-bottom: 8.92857vw;
+}
+
+.car {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.string-car__title {
+  font-weight: 500;
+  font-size: 1.42857vw;
+  padding-bottom: 1.54762vw;
+}
+
+.string-car__li {
+  font-weight: 300;
+  font-size: 1.19048vw;
+  color: #191919;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1.96429vw;
+}
+
+.string-car__li:last-child {
+  padding-bottom: 0px;
+}
+
+.string-car__li picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.string-car__li img {
+  width: 0.89286vw;
+  height: 0.89286vw;
+  margin-right: 1.07143vw;
+}
+
+.string-car__li span {
+  max-width: 33.39286vw;
+}
+
+.car__img {
+  position: absolute;
+}
+
+.car__img img {
+  width: 48.80952vw;
+  height: 25vw;
+}
+
+.car_1 .car__img {
+  top: 16.66667vw;
+  right: 0;
+}
+
+.car_2 .car__img {
+  left: 0;
+  top: 39.88095vw;
+}
+
+.car_2 .car__strings {
+  margin-left: 50%;
+  margin-top: 7.7381vw;
+}
+
+.block-grenade {
+  position: relative;
+  height: 20.83333vw;
+  margin-bottom: 6.36905vw;
+}
+
+.grenade-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.grenade-bg img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grenade__content {
+  position: relative;
+  padding-left: 15.17857vw;
+  padding-top: 4.40476vw;
+}
+
+.grenade__title {
+  display: block;
+  font-weight: 500;
+  font-size: 2.02381vw;
+  line-height: 130%;
+  padding-bottom: 0.2381vw;
+}
+
+.grenade__subtitle {
+  display: block;
+  padding-bottom: 1.13095vw;
+  font-weight: 500;
+  font-size: 1.54762vw;
+  line-height: 130%;
+}
+
+.grenade__text {
+  max-width: 47.14286vw;
+  display: block;
+  line-height: 130%;
 }
 
 .hide {
@@ -1227,17 +1389,25 @@ button {
   .img__nikolaev420 {
     display: none;
   }
+
+  .grenade-bg480 {
+    display: none;
+  }
 }
 
 @media (min-width: 991.98px) {
   .img__nikolaev1028 {
     display: none;
   }
+
+  .grenade-bg768 {
+    display: none;
+  }
 }
 
 @media (max-width: 991px) {
   .container {
-    width: 80.72917vw;
+    width: 85.9375vw;
   }
 }
 
@@ -1249,7 +1419,17 @@ button {
     margin: 0px 6.51042vw 0.78125vw;
   }
 
+  .small-title {
+    font-size: 3.125vw;
+    line-height: 3.77604vw;
+  }
+
   .subtitle {
+    font-size: 2.60417vw;
+    line-height: 3.125vw;
+  }
+
+  .small-subtitle {
     font-size: 2.60417vw;
     line-height: 3.125vw;
   }
@@ -1468,7 +1648,7 @@ button {
     max-width: 34.50521vw;
   }
 
-  .parallax {
+  .header-bg {
     height: 282.55208vw;
     background-attachment: inherit;
     background-size: 100% 100%;
@@ -1487,8 +1667,108 @@ button {
     position: absolute;
     width: 13.80208vw;
     height: 16.27604vw;
-    top: 95% !important;
+    top: -7.8125vw !important;
     left: 80% !important;
+  }
+
+  .bullet_3 {
+    position: absolute;
+    width: 13.93229vw;
+    height: 13.15104vw;
+    top: -5.20833vw !important;
+    left: 78% !important;
+  }
+
+  .white-1 {
+    padding-top: 10.41667vw;
+  }
+
+  .cars {
+    padding-left: 0;
+  }
+
+  .cars__title {
+    max-width: 58.72396vw;
+  }
+
+  .cars__subtitle {
+    padding-bottom: 4.29688vw;
+    padding-top: 2.08333vw;
+    max-width: 33.85417vw;
+  }
+
+  .cars__content {
+    padding-bottom: 31.25vw;
+  }
+
+  .string-car__title {
+    font-size: 2.34375vw;
+    padding-bottom: 2.60417vw;
+  }
+
+  .string-car__li {
+    font-size: 1.82292vw;
+    padding-bottom: 2.47396vw;
+  }
+
+  .string-car__li img {
+    width: 1.95313vw;
+    height: 1.95313vw;
+    margin-right: 2.34375vw;
+  }
+
+  .string-car__li span {
+    max-width: 52.08333vw;
+  }
+
+  .car__img img {
+    width: 53.64583vw;
+    height: 27.60417vw;
+  }
+
+  .car_1 .car__img {
+    right: -1.30208vw;
+  }
+
+  .car_2 .car__img {
+    top: 87.23958vw;
+    left: -1.30208vw;
+  }
+
+  .car_2 .car__strings {
+    margin-top: 5.85938vw;
+    margin-left: 38%;
+  }
+
+  .block-grenade {
+    height: 37.76042vw;
+    margin-bottom: 9.11458vw;
+  }
+
+  .grenade-bg1680 {
+    display: none;
+  }
+
+  .grenade__content {
+    padding-top: 4.42708vw;
+    padding-left: 19.01042vw;
+  }
+
+  .grenade__title {
+    font-size: 3.125vw;
+    padding-bottom: 1.82292vw;
+    max-width: 46.48438vw;
+  }
+
+  .grenade__subtitle {
+    font-size: 2.34375vw;
+    padding-bottom: 1.5625vw;
+    max-width: 39.97396vw;
+    max-width: 50vw;
+  }
+
+  .grenade__text {
+    max-width: 56.64063vw;
   }
 }
 
@@ -1500,7 +1780,17 @@ button {
     margin: 0px 10.41667vw 0.78125vw;
   }
 
+  .small-title {
+    font-size: 3.33333vw;
+    line-height: 3.95833vw;
+  }
+
   .subtitle {
+    font-size: 2.91667vw;
+    line-height: 3.54167vw;
+  }
+
+  .small-subtitle {
     font-size: 2.91667vw;
     line-height: 3.54167vw;
   }
@@ -1735,15 +2025,117 @@ button {
     max-width: 51.25vw;
   }
 
-  .parallax {
+  .header-bg {
     height: 368.75vw;
   }
 
   .bullet_2 {
-    top: 95% !important;
-    left: 70% !important;
+    top: -10.41667vw !important;
+    left: 65% !important;
     width: 17.91667vw;
     height: 21.25vw;
+  }
+
+  .bullet_3 {
+    top: -6.25vw !important;
+    left: 70% !important;
+    width: 16.45833vw;
+    height: 15.41667vw;
+  }
+
+  .white-1 {
+    padding-top: 14.58333vw;
+  }
+
+  .cars__title {
+    max-width: 60.83333vw;
+  }
+
+  .cars__subtitle {
+    padding-bottom: 4.79167vw;
+    max-width: 37.29167vw;
+    padding-top: 2.08333vw;
+  }
+
+  .cars__content {
+    padding-bottom: 46.875vw;
+  }
+
+  .string-car__title {
+    font-size: 2.91667vw;
+    padding-bottom: 2.29167vw;
+    max-width: 27.70833vw;
+  }
+
+  .string-car__li {
+    font-size: 2.5vw;
+    padding-bottom: 3.75vw;
+  }
+
+  .string-car__li img {
+    width: 2.08333vw;
+    height: 2.08333vw;
+    margin-right: 2.5vw;
+  }
+
+  .string-car__li span {
+    max-width: 68.75vw;
+  }
+
+  .car__img img {
+    width: 70.83333vw;
+    height: 36.25vw;
+  }
+
+  .car_1 .car__img {
+    top: 16.66667vw;
+    right: -19.79167vw;
+  }
+
+  .car_2 .car__img {
+    left: 50%;
+    top: 117.70833vw;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+  .car_2 .car__strings {
+    margin-left: 0;
+    margin-top: 8.33333vw;
+  }
+
+  .car_2 .string-car__title {
+    max-width: 100%;
+  }
+
+  .block-grenade {
+    margin-bottom: 13.33333vw;
+    height: 67.70833vw;
+  }
+
+  .grenade-bg768 {
+    display: none;
+  }
+
+  .grenade__content {
+    padding-top: 8.33333vw;
+    padding-left: 23.33333vw;
+  }
+
+  .grenade__title {
+    padding-bottom: 1.45833vw;
+    font-size: 3.33333vw;
+  }
+
+  .grenade__subtitle {
+    font-size: 2.91667vw;
+    padding-bottom: 3.33333vw;
+    max-width: 50vw;
+  }
+
+  .grenade__text {
+    max-width: 50vw;
   }
 }
 
