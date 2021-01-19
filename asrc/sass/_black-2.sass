@@ -1,0 +1,206 @@
+.black-2 
+    position: relative
+    padding-top: vw(126px)
+    padding-bottom: vw(183px)
+    @media (max-width: 991.98px)
+        padding-top: vw2(84px)
+        padding-bottom: vw2(90px)
+    @media (max-width: 576.98px)
+        padding-top: vw3(84px)
+        padding-bottom: vw3(65px)
+.black-2__img-bg 
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    img
+        width: 100%
+.black-2__img-bg.bg1680
+    height: vw(3490px)
+.black-2__img-bg.bg768
+    height: vw2(3440px)
+.black-2__img-bg.bg480
+    height: vw3(3460px)
+.leadgeneration 
+    position: relative
+.leadgeneration-title
+    padding-bottom: vw(10px) 
+    @media (max-width: 991.98px)
+        padding-bottom: vw2(5px)
+    @media (max-width: 576.98px)
+        padding-bottom: vw3(5px)
+.leadgeneration__subtitle
+    padding-bottom: vw(50px) 
+    @media (max-width: 991.98px)
+        padding-bottom: vw2(40px)
+    @media (max-width: 576.98px)
+        padding-bottom: vw3(35px)
+.leadgeneration__content
+    display: flex
+    flex-wrap: wrap 
+    position: relative
+    justify-content: space-between
+    @media (max-width: 991.98px)
+        justify-content: center
+.leadgeneration__item
+    flex: 0 1 35%
+    padding-bottom: vw(38px)
+    @media (max-width: 991.98px)
+        flex: 0 1 100%
+        align-items: center
+        padding-bottom: vw2(30px)
+    .leadgeneration__item-body
+        display: flex
+        flex-direction: column
+        @media (max-width: 991.98px)
+            align-items: center
+            margin: auto
+.leadgeneration_1
+    .leadgeneration__item-body
+        margin-left: auto
+        align-items: flex-end
+        max-width: vw(388px)
+        @media (max-width: 991.98px)
+            max-width: vw2(562px)
+        .leadgeneration-item__text
+            text-align: right
+            @media (max-width: 991.98px)
+                text-align: center
+.leadgeneration_2
+    .leadgeneration__item-body
+        max-width: vw(433px)
+        @media (max-width: 991.98px)
+            max-width: vw2(539px)
+.leadgeneration_3
+    .leadgeneration__item-body
+        align-items: flex-end
+        margin-left: auto
+        max-width: vw(449px)
+        @media (max-width: 991.98px)
+            max-width: vw2(529px)
+        .leadgeneration-item__text
+            text-align: right
+            @media (max-width: 991.98px)
+                text-align: center
+
+.leadgeneration_4
+    .leadgeneration__item-body
+        max-width: vw(427px)
+        @media (max-width: 991.98px)
+            max-width: vw2(497px)
+
+.leadgeneration_5
+    flex: 0 1 100%
+    margin-top: vw(-30px)
+    .leadgeneration__item-body
+        margin: auto
+        align-items: center
+        max-width: vw(759px)
+        @media (max-width: 991.98px)
+            max-width: vw2(509px)
+        .leadgeneration-item__text
+            text-align: center
+
+.leadgeneration__img
+    margin-bottom: vw(20px)
+    img
+        width: vw(80px)
+        height: vw(80px)
+        @media (max-width: 991.98px)
+            width: vw2(70px)
+            height: vw2(70px) 
+.leadgeneration-item__title 
+    font-weight: 500
+    font-size: vw(22px)
+    line-height: vw(27px)
+    padding-bottom: vw(7px)
+    @media (max-width: 991.98px)
+        font-size: vw2(16px)
+        line-height: vw2(19px)
+        padding-bottom: vw2(12px)
+.leadgeneration-item__text 
+    @media (max-width: 991.98px)
+        text-align: center
+
+.leadgeneration-block__button-img
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    top: 0
+    width: vw(500px)
+    @media (max-width: 991.98px)
+        top: 100%
+        height: vw2(262px)
+    display: flex
+    flex-direction: column
+    align-items: center
+.leadgeneration-button__img 
+    position: relative
+    padding-top: vw(40px)
+    padding-bottom: vw(70px)
+    @media (max-width: 991.98px)
+        padding: 0
+        margin: auto
+    img
+        width: vw(374px)
+        height: vw(398px)
+        @media (max-width: 991.98px)
+            width: vw2(204px)
+            height: vw2(204px)
+        position: relative
+        z-index: 3
+    &:before
+        content: ''
+        display: block
+        position: absolute
+        left: 50%
+        padding: vw(5px)
+        transform: translateX(-50%)
+        animation: size-center 1s linear infinite alternate
+        top: vw(41px)
+        width: vw(388px)
+        height: vw(388px)
+        @media (max-width: 991.98px)
+            width: vw2(211px)
+            height: vw2(211px)
+            top: 50%
+            transform: translate(-50%, -50%)
+            animation: size-center_mobile 1.1s linear infinite alternate
+
+        background: url('../img/main/black-2/circle-1.png') center / cover no-repeat
+    &:after
+        content: ''
+        display: block
+        position: absolute
+        left: 50%
+        top: 0
+        transform: translateX(-50%)
+        animation: size-center 1.1s linear infinite alternate
+        width: vw(480px)
+        height: vw(480px)
+        @media (max-width: 991.98px)
+            width: vw2(260px)
+            height: vw2(260px)
+            top: 50%
+            transform: translate(-50%, -50%)
+            animation: size-center_mobile 1.1s linear infinite alternate
+        background: url('../img/main/black-2/circle-2.png') center / cover no-repeat
+        
+
+.leadgeneration__button-gold 
+    @media (max-width: 991.98px)
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        z-index: 4
+@keyframes size-center
+    0%
+       transform: translateX(-50%) scale(1) 
+    100%
+        transform: translateX(-50%) scale(1.1) 
+@keyframes size-center_mobile
+    0%
+       transform: translate(-50%, -50%) scale(1) 
+    100%
+        transform: translate(-50%, -50%) scale(1.1) 

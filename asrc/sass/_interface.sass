@@ -170,6 +170,8 @@ button
         font-weight: 500
 .text_w
     color: #FFFFFF
+.text_b
+    color: #191919
 .row
     display: flex
     justify-content: space-between
@@ -181,6 +183,20 @@ button
     flex-direction: column
     display: flex
     flex: 0 1 25%
+
+.bg1680
+    @media (max-width: 991.98px)
+        display: none
+.bg768
+    @media (min-width: 991.98px)
+        display: none
+    @media (max-width: 576.98px)
+        display: none
+.bg480
+    @media (min-width: 576.98px)
+        display: none
+
+
 $maxWidth: 1920
 
 @mixin adaptiv-font($pcSize, $mobSize) 
