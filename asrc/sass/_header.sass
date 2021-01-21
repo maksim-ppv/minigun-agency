@@ -108,8 +108,8 @@
         top: vw2(70px)
         right: vw2(-50px)
     @media (max-width: 576.98px)
-        top: vw3(40px)
-        right: 0
+        top: vw3(60px)
+        right: vw3(-20px)
     img
         width: vw(816px)
         height: vw(676px)
@@ -117,8 +117,8 @@
             width: vw2(312px)
             height: vw2(245px)
         @media (max-width: 576.98px)
-            width: vw3(230px)
-            height: vw3(200px)
+            width: vw3(170px)
+            height: vw3(140px)
 .img__circle
     right: vw(40px)
     @media (max-width: 991.98px)
@@ -126,7 +126,7 @@
         right: vw2(-50px)
     @media (max-width: 576.98px)
         right: 0
-        top: vw3(40px)
+        top: vw3(60px)
     img
         animation: size 1.5s linear infinite alternate
         width: vw(660px)
@@ -135,8 +135,8 @@
             width: vw2(312px)
             height: vw2(270px)
         @media (max-width: 576.98px)
-            width: vw3(230px)
-            height: vw3(200px)
+            width: vw3(140px)
+            height: vw3(140px)
 .block-1__title 
     font-weight: bold
     font-size: vw(50px)
@@ -151,6 +151,7 @@
     @media (max-width: 576.98px)
         font-size: vw3(18px)
         line-height: vw3(22px)
+        max-width: vw3(302px)
         padding-bottom: vw3(16px)
     span
         display: block
@@ -250,9 +251,14 @@
         font-size: vw3(12px)
         line-height: vw3(14px)
         padding-bottom: vw3(13px)
-        max-width: vw3(237px)
+        max-width: vw3(239px)
+        text-align: center
+        margin: auto
 .block-1__buttons 
     display: flex
+    @media (max-width: 576.98px)
+        flex-wrap: wrap
+        justify-content: center
 .button 
     width: vw(350px)
     height: vw(75px)
@@ -266,7 +272,7 @@
         width: vw2(270px)
         height: vw2(60px)
     @media (max-width: 576.98px)
-        width: vw3(200px)
+        width: vw3(245px)
         height: vw3(45px)
 .button-gold 
     font-size: vw(20px)
@@ -293,7 +299,8 @@
     @media (max-width: 991.98px)
         margin-right: vw2(10px)
     @media (max-width: 576.98px)
-        margin-right: vw3(10px)
+        margin-right: 0
+        margin-bottom: vw3(16px)
 .button-transparent 
     font-weight: 300
     font-size: vw(18px)
@@ -325,18 +332,20 @@
         padding-bottom: vw2(99px)
     @media (max-width: 576.98px)
         padding-bottom: vw3(59px)
+.block-2__title
 .block-2__subtitle
     padding-bottom: vw(59px)
     @media (max-width: 991.98px)
         padding-bottom: vw2(61px)
     @media (max-width: 576.98px)
         padding-bottom: vw3(31px)
+        max-width: vw3(262px)
 .block-2__content 
     padding-bottom: vw(59px)
     @media (max-width: 991.98px)
         padding-bottom: vw2(55px)
     @media (max-width: 576.98px)
-        padding-bottom: vw3(58px)
+        padding-bottom: vw3(36px)
 .block-2__item 
     align-items: center
     display: flex
@@ -350,6 +359,7 @@
         @media (max-width: 576.98px)
             width: vw3(170px)
             height: vw3(144px)
+            margin-bottom: vw3(9px)
         transition: 0.7s all
         &:hover
             transform: scale(1.1)
@@ -361,29 +371,31 @@
         width: vw2(211px)
         margin-bottom: vw2(38px)
     @media (max-width: 576.98px)
-        width: vw3(144px)
-        margin-bottom: vw3(42px)
+        width: vw3(250px)
+        margin-bottom: vw3(23px)
 .block-2_2
     width: vw(366px)
     @media (max-width: 991.98px)
         width: vw2(280px)
         margin-bottom: vw2(38px)
     @media (max-width: 576.98px)
-        width: vw3(190px)
-        margin-bottom: vw3(42px)
+        width: vw3(240px)
+        margin-bottom: vw3(31px)
 .block-2_3
     width: vw(279px)
     @media (max-width: 991.98px)
         width: vw2(241px)
     @media (max-width: 576.98px)
-        width: vw3(157px)
+        width: vw3(293px)
+        margin-bottom: vw3(31px)
+
 .block-2_4
     width: vw(259px)
     @media (max-width: 991.98px)
         width: vw2(208px)
     @media (max-width: 576.98px)
-        width: vw3(140px)
-    
+        width: vw3(300px)
+
 .block-2__text 
     text-align: center
 .block-2__button 
@@ -407,13 +419,13 @@
     @media (max-width: 991.98px)
         padding-bottom: vw2(80px)
     @media (max-width: 576.98px)
-        padding-bottom: vw3(68px)
+        padding-bottom: vw3(450px)
 .block-3__title
     margin-bottom: vw(118px)
     @media (max-width: 991.98px)
         margin-bottom: vw2(42px)
     @media (max-width: 576.98px)
-        margin-bottom: vw3(30px)
+        margin-bottom: vw3(40px)
 .block-1__bg 
 .img__nikolaev
     right: vw(-80px)
@@ -433,23 +445,26 @@
 .img__nikolaev420
     @media (min-width: 576.98px)
         display: none
-    right: vw3(-30px)
-    top: vw3(55px)
+    bottom: vw3(0px)
+    top: 54%
+    left: 43%
+    transform: translateX(-50%)
+    right: auto
     img
-        width: vw3(256px)
+        width: vw3(280px)
 .block-3__content 
     flex-direction: column
     justify-content: flex-start
     align-items: flex-start
     padding-left: vw(120px)
     @media (max-width: 576.98px)
-        padding-left: 0
+        padding-left: vw3(40px)
 .row 
 .block-3__item 
     display: flex
     align-items: center
     max-width: vw(550px)
-    margin-bottom: vw(75px)
+    margin-bottom: vw(85px)
     position: relative
     padding-left: vw(111px)
     @media (max-width: 991.98px)

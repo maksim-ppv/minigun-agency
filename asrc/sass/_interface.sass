@@ -1,6 +1,6 @@
 $vw-viewport: 1680 
 $vw-viewport2: 768 
-$vw-viewport3: 480 
+$vw-viewport3: 360 
     
 @function vw($font)
     $vw-content: $vw-viewport*0.01*1px
@@ -39,7 +39,7 @@ body
         width: vw2(660px)
 @media (max-width: 568px)
     .container
-        width: vw3(420px)
+        width: vw3(320px)
 button:active, button:focus
     outline: none !important
 
@@ -93,7 +93,7 @@ button
         font-size: vw3(16px)
         line-height: vw3(19px)
         padding: 0px vw3(40px)
-        margin: 0px vw3(50px) vw2(6px)
+        margin: 0px vw3(20px) vw2(6px)
 
     strong
         font-weight: 500
@@ -134,6 +134,7 @@ button
 .subtitle
     display: block
     text-align: center
+    margin: auto
     font-size: vw(32px)
     line-height: vw(38px)
     @media (max-width: 991.98px)
@@ -183,7 +184,14 @@ button
     flex-direction: column
     display: flex
     flex: 0 1 25%
-
+.bg 
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    img
+        width: 100%
+        object-fit: cover
 .bg1680
     @media (max-width: 991.98px)
         display: none
@@ -192,7 +200,7 @@ button
         display: none
     @media (max-width: 576.98px)
         display: none
-.bg480
+.bg360
     @media (min-width: 576.98px)
         display: none
 

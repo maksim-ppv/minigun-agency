@@ -9,7 +9,7 @@
         padding-bottom: vw2(70px) 
     @media (max-width: 576.98px)
         padding-top: vw3(70px)
-        padding-bottom: vw3(60px) 
+        padding-bottom: vw3(50px) 
 .cars
     padding-left: vw(80px)
     @media (max-width: 991.98px)
@@ -39,7 +39,7 @@
     @media (max-width: 991.98px)
         padding-bottom: vw2(240px)
     @media (max-width: 576.98px)
-        padding-bottom: vw3(225px)
+        padding-bottom: vw3(210px)
 .car 
     display: flex
  
@@ -101,9 +101,7 @@
         @media (max-width: 991.98px)
             width: vw2(412px)
             height: vw2(212px)
-        @media (max-width: 576.98px)
-            width: vw3(340px)
-            height: vw3(174px)
+
 .car_1
     .car__img
         top: vw(280px)
@@ -111,19 +109,27 @@
         @media (max-width: 991.98px)
             right: vw2(-10px)
         @media (max-width: 576.98px)
-            top: vw3(80px)
-            right: vw3(-95px)
+            top: vw3(90px)
+            right: vw3(-135px)
+        img
+            @media (max-width: 576.98px)
+                width: vw3(297px)
+                height: vw3(152px)
 .car_2
     .car__img
-       left: 0
-       top: vw(670px)
-       @media (max-width: 991.98px)
+        left: 0
+        top: vw(670px)
+        @media (max-width: 991.98px)
            top: vw2(670px)
            left: vw2(-10px)
-       @media (max-width: 576.98px)
+        @media (max-width: 576.98px)
            left: 50%
-           top: vw3(565px)
+           top: vw3(630px)
            transform: translateX(-50%)
+        img
+            @media (max-width: 576.98px)
+                width: vw3(280px)
+                height: vw3(143px)
     .car__strings
         margin-left: 50%
         margin-top: vw(130px)
@@ -132,7 +138,7 @@
             margin-left: 38%
         @media (max-width: 576.98px)
             margin-left: 0
-            margin-top: vw3(40px)
+            margin-top: vw3(20px)
     .string-car__title 
         @media (max-width: 576.98px)
             max-width: 100%
@@ -153,14 +159,6 @@
     @media (max-width: 576.98px)
         margin-bottom: vw3(64px)
         height: vw3(325px)
-.grenade-bg 
-    position: absolute
-    left: 0
-    top: 0
-    width: 100%
-    img
-        width: 100%
-        object-fit: cover
  
 .grenade-bg1680
     @media (max-width: 991.98px)
@@ -170,7 +168,7 @@
         display: none
     @media (max-width: 576.98px)
         display: none 
-.grenade-bg480 
+.grenade-bg360 
     @media (min-width: 576.98px)
         display: none
 
@@ -182,8 +180,8 @@
         padding-top: vw2(34px)
         padding-left: vw2(146px)
     @media (max-width: 576.98px)
-        padding-top: vw3(40px)
-        padding-left: vw3(112px)
+        padding-top: vw3(34px)
+        padding-left: vw3(52px)
 .grenade__title 
     display: block
     font-weight: 500
@@ -196,6 +194,7 @@
         max-width: vw2(357px)
     @media (max-width: 576.98px)
         padding-bottom: vw3(7px)
+        max-width: vw3(238px)
         font-size: vw3(16px)
 .grenade__subtitle
     display: block 
@@ -218,8 +217,10 @@
     line-height: 130%
     @media (max-width: 991.98px)
         max-width: vw2(435px)
+        line-height: 130%
     @media (max-width: 576.98px)
-        max-width: vw3(240px)
+        line-height: 130%
+        max-width: vw3(235px)
 
 
 

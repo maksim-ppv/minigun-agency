@@ -7,7 +7,7 @@
         padding-bottom: vw2(90px)
     @media (max-width: 576.98px)
         padding-top: vw3(84px)
-        padding-bottom: vw3(65px)
+        padding-bottom: vw3(51px)
 .black-2__img-bg 
     position: absolute
     left: 0
@@ -19,22 +19,29 @@
     height: vw(3490px)
 .black-2__img-bg.bg768
     height: vw2(3440px)
-.black-2__img-bg.bg480
+.black-2__img-bg.bg360
     height: vw3(3460px)
 .leadgeneration 
     position: relative
+    padding-bottom: vw(200px)
+    @media (max-width: 991.98px)
+        padding-bottom: vw2(40px)
+        margin-bottom: vw2(300px)
+    @media (max-width: 576.98px)
+        padding-bottom: vw3(47px)
+        margin-bottom: vw3(290px)
 .leadgeneration-title
     padding-bottom: vw(10px) 
     @media (max-width: 991.98px)
         padding-bottom: vw2(5px)
     @media (max-width: 576.98px)
-        padding-bottom: vw3(5px)
+        padding-bottom: vw3(3px)
 .leadgeneration__subtitle
     padding-bottom: vw(50px) 
     @media (max-width: 991.98px)
         padding-bottom: vw2(40px)
     @media (max-width: 576.98px)
-        padding-bottom: vw3(35px)
+        padding-bottom: vw3(30px)
 .leadgeneration__content
     display: flex
     flex-wrap: wrap 
@@ -49,6 +56,8 @@
         flex: 0 1 100%
         align-items: center
         padding-bottom: vw2(30px)
+        @media (max-width: 576.98px)
+            padding-bottom: vw3(15px)
     .leadgeneration__item-body
         display: flex
         flex-direction: column
@@ -62,6 +71,8 @@
         max-width: vw(388px)
         @media (max-width: 991.98px)
             max-width: vw2(562px)
+        @media (max-width: 576.98px)
+            max-width: vw3(280px)
         .leadgeneration-item__text
             text-align: right
             @media (max-width: 991.98px)
@@ -71,6 +82,8 @@
         max-width: vw(433px)
         @media (max-width: 991.98px)
             max-width: vw2(539px)
+        @media (max-width: 576.98px)
+            max-width: vw3(273px)
 .leadgeneration_3
     .leadgeneration__item-body
         align-items: flex-end
@@ -78,6 +91,8 @@
         max-width: vw(449px)
         @media (max-width: 991.98px)
             max-width: vw2(529px)
+        @media (max-width: 576.98px)
+            max-width: vw3(294px)
         .leadgeneration-item__text
             text-align: right
             @media (max-width: 991.98px)
@@ -88,6 +103,8 @@
         max-width: vw(427px)
         @media (max-width: 991.98px)
             max-width: vw2(497px)
+        @media (max-width: 576.98px)
+            max-width: vw3(297px)
 
 .leadgeneration_5
     flex: 0 1 100%
@@ -98,6 +115,8 @@
         max-width: vw(759px)
         @media (max-width: 991.98px)
             max-width: vw2(509px)
+        @media (max-width: 576.98px)
+            max-width: vw3(300px)
         .leadgeneration-item__text
             text-align: center
 
@@ -108,7 +127,10 @@
         height: vw(80px)
         @media (max-width: 991.98px)
             width: vw2(70px)
-            height: vw2(70px) 
+            height: vw2(70px)
+        @media (max-width: 576.98px)
+            width: vw3(60px)
+            height: vw3(60px) 
 .leadgeneration-item__title 
     font-weight: 500
     font-size: vw(22px)
@@ -118,6 +140,10 @@
         font-size: vw2(16px)
         line-height: vw2(19px)
         padding-bottom: vw2(12px)
+    @media (max-width: 576.98px)
+        font-size: vw3(14px)
+        line-height: vw3(17px)
+        padding-bottom: vw3(9px)
 .leadgeneration-item__text 
     @media (max-width: 991.98px)
         text-align: center
@@ -131,6 +157,10 @@
     @media (max-width: 991.98px)
         top: 100%
         height: vw2(262px)
+    @media (max-width: 576.98px)
+        top: 104.5%
+        width: vw3(204px)
+        height: vw3(217px)
     display: flex
     flex-direction: column
     align-items: center
@@ -147,6 +177,9 @@
         @media (max-width: 991.98px)
             width: vw2(204px)
             height: vw2(204px)
+        @media (max-width: 576.98px)
+            width: vw3(204px)
+            height: vw3(217px)
         position: relative
         z-index: 3
     &:before
@@ -166,7 +199,9 @@
             top: 50%
             transform: translate(-50%, -50%)
             animation: size-center_mobile 1.1s linear infinite alternate
-
+        @media (max-width: 576.98px)
+            width: vw3(211px)
+            height: vw3(211px)
         background: url('../img/main/black-2/circle-1.png') center / cover no-repeat
     &:after
         content: ''
@@ -184,6 +219,9 @@
             top: 50%
             transform: translate(-50%, -50%)
             animation: size-center_mobile 1.1s linear infinite alternate
+        @media (max-width: 576.98px)
+            width: vw3(260px)
+            height: vw3(260px)
         background: url('../img/main/black-2/circle-2.png') center / cover no-repeat
         
 
@@ -204,3 +242,26 @@
        transform: translate(-50%, -50%) scale(1) 
     100%
         transform: translate(-50%, -50%) scale(1.1) 
+
+
+
+
+
+//====================================================================================================================================
+
+
+
+
+.quiz-block
+    position: relative
+.quiz__main-title
+    margin-bottom: vw(19px)
+.quiz__subtitle
+    padding-bottom: vw(76px)
+    font-weight: 300
+    font-size: vw(24px)
+    line-height: vw(29px)
+    text-align: center
+    display: block
+    max-width: vw(1150px)
+    margin: auto
