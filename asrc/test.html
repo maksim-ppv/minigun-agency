@@ -182,8 +182,8 @@
                         <div class="quiz">
                             <div class="quiz__bg-img bg"><img src="./img/quiz/bg.png" alt="" /></div>
                             <form action="#" class="quiz__form">
-                                <div class="quiz__content-img"><img src="./img/quiz/bg-content.png" alt="" /></div>
                                 <div class="quiz__content">
+                                    <div class="quiz__content-img"><img src="./img/quiz/bg-content.png" alt="" /></div>
                                     <div class="quiz__content__title">
                                         Всего <span class="subtitle_g">5 вопросов</span> для определения формата будущего сотрудничества 
                                     </div>
@@ -249,44 +249,14 @@
                                     </div>
                                     <div class="quiz__page" style="display: none;">
                                         <div class="quiz__label">
-                                            <h4 class="quiz__question">Чем именно Вы занимаетесь?</h4>
-                                            <input type="text" class="quiz__input_txt" placeholder="Например кухни на заказ">
+                                            <h4 class="quiz__question_small">Чем именно Вы занимаетесь?</h4>
+                                            <input type="text" class="quiz__input_txt"
+                                                placeholder="Например кухни на заказ">
                                         </div>
                                         <div class="quiz__label">
-                                            <h4 class="quiz__question">В каком регионе вы работаете?</h4>
-                                            <input type="text" class="quiz__input_txt" placeholder="Например, Киев и область">
-                                        </div>
-                                        <div class="quiz__btn-block">   
-                                            <button class="quiz__btn quiz__prev">Назад</button>
-                                            <button class="quiz__btn quiz__next" disabled="true">Далее</button>
-    
-                                        </div>
-                                    </div>
-                                    <div class="quiz__page" style="display: none;">
-                                        <h3 class="quiz__question">Есть ли у вас отдел продаж?</h3>
-                                        <div class="quiz__row">
-                                            <label class="quiz__column quiz__variant" for="3-1">
-                                                <img src="./img/quiz/quiz_icons/more_leads.svg" alt="иконка ценообразование" class="quiz__icon">
-                                                <input type="radio" class="quiz__input" name="Вид_отдела_продаж" id="3-1"
-                                                    value=" Сам занимаюсь продажами"> Сам занимаюсь продажами
-                                                
-                                            </label>
-                                            <label class="quiz__column quiz__variant" for="3-2">
-                                                <img src="./img/quiz/quiz_icons/surface.svg" alt="иконка ценообразование" class="quiz__icon">
-                                                <input type="radio" class="quiz__input" name="Вид_отдела_продаж" id="3-2"
-                                                    value="Удаленный call-centre">Удаленный call-centre
-                                            </label>
-                                            <label class="quiz__column quiz__variant" for="3-3">
-                                                <img src="./img/quiz/quiz_icons/marketing.svg" alt="иконка ценообразование" class="quiz__icon">
-                                                <input type="radio" class="quiz__input" name="Вид_отдела_продаж" id="3-3"
-                                                    value="Есть менеджеры по продажам">Есть менеджеры по продажам
-                                            </label>
-                                            <label class="quiz__column quiz__variant" for="3-4">
-                                                <img src="./img/quiz/quiz_icons/down.svg" alt="иконка ценообразование" class="quiz__icon">
-                                                <input type="radio" class="quiz__input" name="Вид_отдела_продаж" id="3-4"
-                                                    value="Серьезный Call-центр со скриптами и телефонией">Серьезный Call-центр со скриптами и телефонией
-                                                
-                                            </label>
+                                            <h4 class="quiz__question_small">В каком регионе вы работаете?</h4>
+                                            <input type="text" class="quiz__input_txt"
+                                                placeholder="Например, Киев и область">
                                         </div>
                                         <div class="quiz__btn-block">   
                                             <button class="quiz__btn quiz__prev">Назад</button>
@@ -311,7 +281,44 @@
     
                                         </div>
                                     </div>
-                                    
+                                    <div class="quiz__page" style="display: none;">
+                                        <h3 class="quiz__question">Заголовок вопроса</h3>
+                                        <div class="quiz__row">
+                                            <label class="quiz__column quiz__variant" for="3-1">
+                                                <img src="./img/quiz/quiz_icons/more_leads.svg" alt="иконка ценообразование" class="quiz__icon">
+                                                <input type="radio" class="quiz__input" name="Вид_деятельности" id="3-1"
+                                                    value="Нужно больше лидов (клиентов)">Нужно больше
+                                                лидов (клиентов)
+                                                
+                                            </label>
+                                            <label class="quiz__column quiz__variant" for="3-2">
+                                                <img src="./img/quiz/quiz_icons/surface.svg" alt="иконка ценообразование" class="quiz__icon">
+                                                <input type="radio" class="quiz__input" name="Вид_деятельности" id="3-2"
+                                                    value="Необходимо протестировать новое направление">Необходимо
+                                                протестировать новое направление
+                                                
+                                            </label>
+                                            <label class="quiz__column quiz__variant" for="3-3">
+                                                <img src="./img/quiz/quiz_icons/marketing.svg" alt="иконка ценообразование" class="quiz__icon">
+                                                <input type="radio" class="quiz__input" name="Вид_деятельности" id="3-3"
+                                                    value="Внедрить/улучшить интернет-маркетинг в компании">Внедрить/улучшить
+                                                интернет-маркетинг в компании
+                                                
+                                            </label>
+                                            <label class="quiz__column quiz__variant" for="3-4">
+                                                <img src="./img/quiz/quiz_icons/down.svg" alt="иконка ценообразование" class="quiz__icon">
+                                                <input type="radio" class="quiz__input" name="Вид_деятельности" id="3-4"
+                                                    value="Низкая конверсия в продажах">Низкая конверсия в
+                                                продажах
+                                                
+                                            </label>
+                                        </div>
+                                        <div class="quiz__btn-block">   
+                                            <button class="quiz__btn quiz__prev">Назад</button>
+                                            <button class="quiz__btn quiz__next" disabled="true">Далее</button>
+    
+                                        </div>
+                                    </div>
                                     <div class="quiz__page" style="display: none;">
                                         <h3 class="quiz__question">Как быстро готовы приступить?</h3>
                                         <div class="quiz__row  options">
@@ -392,10 +399,10 @@
                                         <span class="quiz__gift-director__name">Дмитрий</span>
                                     </div>
                                     <div class="quiz__gift-inner">
-                                        <h4 class="quiz__gift-title quiz__gift-title-css">До получения расчета, подарка и скидки осталось:</h4>
-                                        <h4 class="quiz__gift-count quiz__gift-count-css">5 вопросов</h4>
-                                        <h4 class="quiz__gift-title-final quiz__gift-title-css">До получения расчета, подарка и скидки остался:</h4>
-                                        <h4 class="quiz__gift-count-final quiz__gift-count-css">Последний вопрос</h4>
+                                        <h4 class="quiz__gift-title">До получения расчета, подарка и скидки осталось:</h4>
+                                        <h4 class="quiz__gift-count">5 вопросов</h4>
+                                        <h4 class="quiz__gift-title-final quiz__gift-title">До получения расчета, подарка и скидки остался:</h4>
+                                        <h4 class="quiz__gift-count-final quiz__gift-count">Последний вопрос</h4>
                                         <img src="./img/quiz/quiz_img/quiz_gift.png" alt="изображение подарка" class="quiz__gift-img">
                                     </div>
                                 </div>

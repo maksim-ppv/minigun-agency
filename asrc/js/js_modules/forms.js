@@ -20,9 +20,7 @@ function forms(){
 					$(this).toggleClass('orderactive');
 				}
     				$(this).parents('.options').find('.option_one').removeClass('active');
-    				$(this).parents('.options').find('input').prop('checked', false);
 					$(this).toggleClass('active');
-                    $(this).find('input').prop('checked', true);
 
 			}
 		}

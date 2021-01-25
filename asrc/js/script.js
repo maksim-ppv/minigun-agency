@@ -4,6 +4,7 @@
 @@include('js_modules/active.js');
 @@include('js_modules/dynamic-adaptiv.js');
 @@include('js_modules/quiz.js');
+@@include('js_modules/forms.js');
 
 
 

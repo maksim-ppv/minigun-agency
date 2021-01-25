@@ -29,13 +29,11 @@ $element.on('change input', function (e) {
 	var value = $(this).val().trim();
 	isValid = value !== "";
 	btnActive(!isValid);
-	$(".text-subbtn").hide();
 });
 
 function btnActive(isValid) {
 	if (number === 0) {
 		// btnPrev.prop('disabled', 'false');
-		btnNext.prop('disabled', isValid);
 	} else {
 		// btnPrev.prop('disabled', false);
 		if (activeSlede[number] === true || isValid === false) {
@@ -83,18 +81,15 @@ function btnClick() {
 btnClick();
 function next() {
 	event.preventDefault();
+	
 	activeSlede[number] = true;
-
 	++number;
 
 	setTimeout(function () {
 		$(".quiz__page").hide();
 		$(".quiz__page").eq(number).fadeIn(1000);
 	}, 300);
-	$(".quiz__next").hide();
-	$(".quiz__next").eq(number).show();
-	$(".quiz__prev").hide();
-	$(".quiz__prev").eq(number).show();
+
 
 	btnActive(!isValid);
 	if (activeSlede[number] === true) {
@@ -104,6 +99,8 @@ function next() {
 	}
 
 	$barWidth += $barLevel;
+	console.log('maxNumber: ', maxNumber);
+	console.log('number: ', number);
 	if (number < maxNumber - 1) {
 		$(".right__text-cont-item").hide();
 		$(".right__text-cont-item").eq(number).fadeIn(1000);
@@ -111,19 +108,12 @@ function next() {
 		$barWidth = 100;
 	}
 
-
-
-	// if(number === 6){
-	//   $('.test__righ-t1').hide();
-	//   $('.test__righ-t2').fadeIn();
-	// }
 	if (number === maxNumber) {
 		$('.quiz__gift-count, .quiz__gift-title').hide();
 		$('.quiz__gift-title-final, .quiz__gift-count-final').fadeIn();
 		$('.quiz__for_mocup').addClass('active');
-		// $('.present-img-item').attr({
-		//   "src": $('.gift-box-item_new img').attr('src'),
-		// });
+		$('.quiz__visual').hide(1000);
+		
 
 		for (var i = 0; i < maxNumber; i++) {
 			var val = '';
@@ -140,10 +130,10 @@ function next() {
 			$('.text-final-ul').append('<p class="text-small text-final-li">'
 				+ str + '</p>');
 		}
-		$('.test__btn-block').hide();
 	}
 	if (testTextNum != 1) {
 		testTextNum -= 1;
+		console.log('testTextNum: ', testTextNum);
 		if (testTextNum < 5 && testTextNum > 1) {
 			testText.text(testTextNum + ' вопросa');
 		} else if (testTextNum < 2) {
@@ -153,37 +143,28 @@ function next() {
 		}
 	}
 	setTimeout(function () {
-		$(".test-item__number-furst").text(number + 1);
-		// $barWidth += $barLevel;
 		progress(number);
-
-		//   animateTop ();
 	}, 300);
 	// }
 }
 
 function prev() {
 	event.preventDefault();
-	activeSlede[number] = true;
-
+	
 	--number;
+	activeSlede[number] = true;
 
 	setTimeout(function () {
 		$(".quiz__page").hide();
 		$(".quiz__page").eq(number).fadeIn(1000);
 	}, 300);
-	$(".quiz__next").hide();
-	$(".quiz__next").eq(number).show();
-	$(".quiz__prev").hide();
-	$(".quiz__prev").eq(number).show();
-	//   $("#not_vis").hide();
+
 
 	btnActive(!isValid);
-	if (activeSlede[number] === true) {
+	if(true){
 		btnNext.prop('disabled', false);
-	} else {
-		btnNext.prop('disabled', true);
 	}
+
 
 	$barWidth -= $barLevel;
 	if (number < maxNumber - 1) {
