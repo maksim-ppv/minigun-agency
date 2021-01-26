@@ -87,39 +87,57 @@
     display: flex
     align-items: center
     margin-bottom: 20px
-.range-info
+.range-info,.range-input
     display: flex
     justify-content: space-between
-    margin-bottom: 10px
+    margin-top: vw(18px)
+    color: #919191
+    font-size: vw(16px)
+    line-height: vw(19px)
+    @media (max-width: 991.98px)
+        font-size: vw2(14px)
+        line-height: vw2(17px)
+        margin-top: vw2(20px)
+.range-input
+    margin-top: 0
+    @media (max-width: 991.98px)
+        margin-top: 0
 
 
 
 
-
-
-.content-price-form__range
-    margin-bottom: 30px
+.quiz-form__range
+    margin-bottom: vw(55px)
+    margin-top: vw(5px)
+    max-width: vw(435px)
+    @media (max-width: 991.98px)
+        max-width: 100%
+        margin-top: vw2(5px)
+        margin-bottom: vw2(10px)
 .ui-slider.ui-slider-horizontal
     position: relative
-    height: 7px
+    background: rgba(214,181,110, 0.4)
+    height: 2px
+    opacity: 1
     border: none
-    background: #F9F9F9
-    border-radius: 12px
-
+    border-radius: 10px
 .ui-slider .ui-slider-handle
-    width: 15px
-    height: 15px
-    background: url('../img/price/range.svg') 0 0 no-repeat
+    width: vw(25px)
+    height: vw(25px)
+    background: url('../img/quiz/quiz_icons/range.svg') 0 / contain no-repeat
     position: absolute
     border-right: none
-    top: -3px
+    top: 50%
+    transform: translateY(-50%)
     margin-left: -5px
     cursor: pointer
+    @media (max-width: 991.98px)
+        width: vw2(20px)
+        height: vw2(20px)
 .ui-slider .ui-slider-range
-    background: linear-gradient(182.74deg, #DAB171 -6.32%, #F3DEAD -6.31%, #F4E6CB 36.24%, #D9BD89 78.81%)
-    height: 7px
-    border-top-left-radius: 12px
-    border-bottom-left-radius: 12px
+    background: #D6B56E
+    height: 2px
+    opacity: 1
 
 
 

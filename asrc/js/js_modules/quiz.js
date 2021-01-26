@@ -5,6 +5,8 @@ var number = 0;
 var maxNumber = $(".quiz__page").length - 1;
 var $element = $(".quiz__page").find("input, select, textarea");
 var btnNext = $('.quiz__next');
+var btnTrue = $('.quiz__next-disable_true');
+
 var testTextNum = maxNumber;
 var testText = $('.quiz__gift-count');
 var $elementRadio = $(".quiz__page").not('.final, .no-focus').find("input[type='radio'], input[type='checkbox'] ");
@@ -40,6 +42,8 @@ function btnActive(isValid) {
 			btnNext.prop('disabled', false);
 		} else {
 			btnNext.prop('disabled', true);
+			btnTrue.prop('disabled', false);
+
 		}
 
 	}
@@ -96,6 +100,7 @@ function next() {
 		btnNext.prop('disabled', false);
 	} else {
 		btnNext.prop('disabled', true);
+		btnTrue.prop('disabled', false);
 	}
 
 	$barWidth += $barLevel;
@@ -112,7 +117,7 @@ function next() {
 		$('.quiz__gift-count, .quiz__gift-title').hide();
 		$('.quiz__gift-title-final, .quiz__gift-count-final').fadeIn();
 		$('.quiz__for_mocup').addClass('active');
-		$('.quiz__visual').hide(1000);
+		$('.quiz__visual, .quiz__content__title, .quiz__content__subtitle').hide(1000);
 		
 
 		for (var i = 0; i < maxNumber; i++) {
@@ -163,6 +168,7 @@ function prev() {
 	btnActive(!isValid);
 	if(true){
 		btnNext.prop('disabled', false);
+		btnTrue.prop('disabled', false);
 	}
 
 

@@ -185,27 +185,10 @@ if(n.val()==""){
 }
 
 	//RANGE
-	const range = document.querySelectorAll('.range');
 	const range2 = document.querySelectorAll('.range_2');
 	const range3 = document.querySelectorAll('.range_3');
 	
-	range.forEach(item=>{
-		const rangeto = item.querySelector('.rangeto');
-		const rangeControl = item.querySelector('.range_control');
-		if($(rangeControl).length>0){
-			$(rangeControl).slider({
-				range: "min",
-				min: 0,
-				max: 3000,
-				value: 500,
-				slide: function( event, ui ){
-					$(rangeto).val(ui.value);
-				}
-			});
-			$(rangeto).val($(rangeControl).slider( "value"));
-	
-		}
-	});
+
 	range2.forEach(item=>{
 		const rangeto = item.querySelector('.rangeto');
 		const rangeControl = item.querySelector('.range_control');
@@ -213,8 +196,8 @@ if(n.val()==""){
 			$(rangeControl).slider({
 				range: "min",
 				min: 0,
-				max: 300,
-				value: 43,
+				max: 75,
+				value: 0,
 				slide: function( event, ui ){
 					$(rangeto).val(ui.value);
 				}
@@ -230,8 +213,8 @@ if(n.val()==""){
 			$(rangeControl).slider({
 				range: "min",
 				min: 0,
-				max: 25,
-				value: 4,
+				max: 75,
+				value: 1,
 				slide: function( event, ui ){
 					$(rangeto).val(ui.value);
 				}

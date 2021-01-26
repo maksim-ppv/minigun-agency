@@ -1352,6 +1352,8 @@ var number = 0;
 var maxNumber = $(".quiz__page").length - 1;
 var $element = $(".quiz__page").find("input, select, textarea");
 var btnNext = $('.quiz__next');
+var btnTrue = $('.quiz__next-disable_true');
+
 var testTextNum = maxNumber;
 var testText = $('.quiz__gift-count');
 var $elementRadio = $(".quiz__page").not('.final, .no-focus').find("input[type='radio'], input[type='checkbox'] ");
@@ -1387,6 +1389,8 @@ function btnActive(isValid) {
 			btnNext.prop('disabled', false);
 		} else {
 			btnNext.prop('disabled', true);
+			btnTrue.prop('disabled', false);
+
 		}
 
 	}
@@ -1443,6 +1447,7 @@ function next() {
 		btnNext.prop('disabled', false);
 	} else {
 		btnNext.prop('disabled', true);
+		btnTrue.prop('disabled', false);
 	}
 
 	$barWidth += $barLevel;
@@ -1459,7 +1464,7 @@ function next() {
 		$('.quiz__gift-count, .quiz__gift-title').hide();
 		$('.quiz__gift-title-final, .quiz__gift-count-final').fadeIn();
 		$('.quiz__for_mocup').addClass('active');
-		$('.quiz__visual').hide(1000);
+		$('.quiz__visual, .quiz__content__title, .quiz__content__subtitle').hide(1000);
 		
 
 		for (var i = 0; i < maxNumber; i++) {
@@ -1510,6 +1515,7 @@ function prev() {
 	btnActive(!isValid);
 	if(true){
 		btnNext.prop('disabled', false);
+		btnTrue.prop('disabled', false);
 	}
 
 
@@ -1837,27 +1843,10 @@ if(n.val()==""){
 }
 
 	//RANGE
-	const range = document.querySelectorAll('.range');
 	const range2 = document.querySelectorAll('.range_2');
 	const range3 = document.querySelectorAll('.range_3');
 	
-	range.forEach(item=>{
-		const rangeto = item.querySelector('.rangeto');
-		const rangeControl = item.querySelector('.range_control');
-		if($(rangeControl).length>0){
-			$(rangeControl).slider({
-				range: "min",
-				min: 0,
-				max: 3000,
-				value: 500,
-				slide: function( event, ui ){
-					$(rangeto).val(ui.value);
-				}
-			});
-			$(rangeto).val($(rangeControl).slider( "value"));
-	
-		}
-	});
+
 	range2.forEach(item=>{
 		const rangeto = item.querySelector('.rangeto');
 		const rangeControl = item.querySelector('.range_control');
@@ -1865,8 +1854,8 @@ if(n.val()==""){
 			$(rangeControl).slider({
 				range: "min",
 				min: 0,
-				max: 300,
-				value: 43,
+				max: 75,
+				value: 0,
 				slide: function( event, ui ){
 					$(rangeto).val(ui.value);
 				}
@@ -1882,8 +1871,8 @@ if(n.val()==""){
 			$(rangeControl).slider({
 				range: "min",
 				min: 0,
-				max: 25,
-				value: 4,
+				max: 75,
+				value: 1,
 				slide: function( event, ui ){
 					$(rangeto).val(ui.value);
 				}

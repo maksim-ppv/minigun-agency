@@ -2,12 +2,13 @@
     position: relative
     padding-top: vw(126px)
     padding-bottom: vw(183px)
+    overflow-y: hidden
     @media (max-width: 991.98px)
         padding-top: vw2(84px)
         padding-bottom: vw2(90px)
     @media (max-width: 576.98px)
         padding-top: vw3(84px)
-        padding-bottom: vw3(51px)
+        padding-bottom: vw3(5001px)
 .black-2__img-bg 
     position: absolute
     left: 0
@@ -20,7 +21,7 @@
 .black-2__img-bg.bg768
     height: vw2(3440px)
 .black-2__img-bg.bg360
-    height: vw3(3460px)
+    height: vw3(3820px)
 .leadgeneration 
     position: relative
     padding-bottom: vw(200px)
@@ -256,6 +257,12 @@
     position: relative
 .quiz__main-title
     margin-bottom: vw(19px)
+    @media (max-width: 991.98px)
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: vw2(12px)
+    @media (max-width: 576.98px)
+        margin-bottom: vw3(12px)
 .quiz__subtitle
     padding-bottom: vw(76px)
     font-weight: 300
@@ -265,3 +272,13 @@
     display: block
     max-width: vw(1150px)
     margin: auto
+    @media (max-width: 991.98px)
+        padding-bottom: vw2(19px)
+        font-size: vw2(16px)
+        line-height: vw2(19px)
+        max-width: vw2(533px)
+    @media (max-width: 576.98px)
+        font-size: vw3(14px)
+        line-height: vw3(17px)
+        max-width: vw3(300px)
+        padding-bottom: vw3(19px)
