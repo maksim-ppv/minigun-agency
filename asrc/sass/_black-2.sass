@@ -1,14 +1,14 @@
 .black-2 
     position: relative
     padding-top: vw(126px)
-    padding-bottom: vw(183px)
+    padding-bottom: vw(133px)
     overflow-y: hidden
     @media (max-width: 991.98px)
         padding-top: vw2(84px)
         padding-bottom: vw2(90px)
     @media (max-width: 576.98px)
         padding-top: vw3(84px)
-        padding-bottom: vw3(5001px)
+        padding-bottom: vw3(51px)
 .black-2__img-bg 
     position: absolute
     left: 0
@@ -17,11 +17,14 @@
     img
         width: 100%
 .black-2__img-bg.bg1680
-    height: vw(3490px)
+    img
+        height: vw(3490px)
 .black-2__img-bg.bg768
-    height: vw2(3440px)
+    img
+        height: vw2(3440px)
 .black-2__img-bg.bg360
-    height: vw3(3820px)
+    img
+        height: vw3(3820px)
 .leadgeneration 
     position: relative
     padding-bottom: vw(200px)
@@ -282,3 +285,95 @@
         line-height: vw3(17px)
         max-width: vw3(300px)
         padding-bottom: vw3(19px)
+
+
+
+//====================================================================================================================================
+
+
+
+.list 
+    position: relative
+    padding-top: vw(178px)
+    @media (max-width: 991.98px)
+        padding-top: vw2(77px)
+.list__title
+    margin-bottom: vw(19px) 
+    @media (max-width: 991.98px)
+        margin: auto
+        margin-bottom: vw2(10px)
+.list__subtitle 
+    font-weight: 300
+    font-size: vw(24px)
+    line-height: vw(29px)
+    display: block
+    padding-bottom: vw(49px)
+    @media (max-width: 991.98px)
+        font-size: vw2(20px)
+        line-height: vw2(24px)
+        padding-bottom: vw2(32px)
+
+.list__content 
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    max-width: vw(1200px)
+    margin: auto
+    @media (max-width: 991.98px)
+        max-width: 100%
+.row 
+.list__item
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
+    flex: 0 1 33.333%
+    padding-bottom: vw(49px)
+    @media (max-width: 991.98px)
+        flex: 0 1 50%
+        padding-bottom: vw2(39px)
+        justify-content: center
+    img
+        width: vw(200px) 
+        height: vw(170px)
+        margin-bottom: vw(13px)
+        @media (max-width: 991.98px)
+            width: vw2(170px)
+            height: vw2(144px)
+            margin-bottom: vw2(15px)
+.list__text 
+    text-align: center
+.list_1
+    .list__text
+        max-width: vw(268px) 
+        @media (max-width: 991.98px)
+            max-width: vw2(221px)
+
+.list_2
+    .list__text 
+        max-width: vw(320px) 
+        @media (max-width: 991.98px)
+            max-width: vw2(231px)
+
+
+.list_3
+    .list__text
+        max-width: vw(371px) 
+        @media (max-width: 991.98px)
+            max-width: vw2(230px)
+
+
+.list_4
+    .list__text
+        max-width: vw(350px) 
+        @media (max-width: 991.98px)
+            max-width: vw2(244px)
+
+
+.list_5
+    flex: 0 1 100%
+    .list__text
+        max-width: vw(304px) 
+        @media (max-width: 991.98px)
+            max-width: vw2(246px)
+
