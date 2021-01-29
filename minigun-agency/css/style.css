@@ -1061,6 +1061,34 @@ button {
   height: 10.71429vw;
 }
 
+.bullet_4 {
+  left: 2% !important;
+  top: 32% !important;
+  width: 6.60714vw;
+  height: 6.25vw;
+}
+
+.bullet_5 {
+  left: 83% !important;
+  top: 84% !important;
+  width: 7.61905vw;
+  height: 8.9881vw;
+}
+
+.bullet_6 {
+  left: -5% !important;
+  top: 35% !important;
+  width: 10.11905vw;
+  height: 7.38095vw;
+}
+
+.bullet_7 {
+  left: 87% !important;
+  top: 75% !important;
+  width: 8.75vw;
+  height: 6.30952vw;
+}
+
 .white-1 {
   padding-top: 8.80952vw;
   position: relative;
@@ -1590,12 +1618,6 @@ button {
 
 .list_4 .list__text {
   max-width: 20.83333vw;
-}
-
-.list_5 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 100%;
-          flex: 0 1 100%;
 }
 
 .list_5 .list__text {
@@ -2693,6 +2715,38 @@ button {
     left: 78% !important;
   }
 
+  .bullet_4 {
+    position: absolute;
+    width: 12.10938vw;
+    height: 11.45833vw;
+    top: 37% !important;
+    left: 0% !important;
+  }
+
+  .bullet_5 {
+    position: absolute;
+    width: 13.28125vw;
+    height: 15.49479vw;
+    top: 75% !important;
+    left: 81% !important;
+  }
+
+  .bullet_6 {
+    position: absolute;
+    width: 19.92188vw;
+    height: 14.58333vw;
+    top: 40% !important;
+    left: -10% !important;
+  }
+
+  .bullet_7 {
+    position: absolute;
+    width: 15.75521vw;
+    height: 11.45833vw;
+    top: 75% !important;
+    left: 78% !important;
+  }
+
   .white-1 {
     padding-top: 10.41667vw;
     padding-bottom: 9.11458vw;
@@ -2992,6 +3046,7 @@ button {
     font-size: 2.60417vw;
     line-height: 3.125vw;
     padding-bottom: 4.16667vw;
+    max-width: 47.91667vw;
   }
 
   .list__content {
@@ -3028,6 +3083,12 @@ button {
 
   .list_4 .list__text {
     max-width: 31.77083vw;
+  }
+
+  .list_5 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
   }
 
   .list_5 .list__text {
@@ -3557,6 +3618,34 @@ button {
     height: 20.55556vw;
   }
 
+  .bullet_4 {
+    top: 39% !important;
+    left: -5% !important;
+    width: 18.33333vw;
+    height: 17.22222vw;
+  }
+
+  .bullet_5 {
+    top: 75% !important;
+    left: 75% !important;
+    width: 21.11111vw;
+    height: 24.72222vw;
+  }
+
+  .bullet_6 {
+    top: 68% !important;
+    left: -10% !important;
+    width: 23.33333vw;
+    height: 16.94444vw;
+  }
+
+  .bullet_7 {
+    top: 88% !important;
+    left: 78% !important;
+    width: 21.94444vw;
+    height: 16.11111vw;
+  }
+
   .white-1 {
     padding-top: 19.44444vw;
     padding-bottom: 13.88889vw;
@@ -3775,6 +3864,55 @@ button {
     line-height: 4.72222vw;
     max-width: 83.33333vw;
     padding-bottom: 5.27778vw;
+  }
+
+  .list {
+    padding-top: 17.5vw;
+  }
+
+  .list__title {
+    margin: auto;
+    margin-bottom: 3.05556vw;
+  }
+
+  .list__subtitle {
+    font-size: 3.88889vw;
+    line-height: 4.72222vw;
+    padding-bottom: 11.38889vw;
+    max-width: 70.55556vw;
+  }
+
+  .list__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding-bottom: 6.11111vw;
+  }
+
+  .list__item img {
+    width: 47.22222vw;
+    height: 40vw;
+    margin-bottom: 3.05556vw;
+  }
+
+  .list_1 .list__text {
+    max-width: 83.33333vw;
+  }
+
+  .list_2 .list__text {
+    max-width: 83.33333vw;
+  }
+
+  .list_3 .list__text {
+    max-width: 70vw;
+  }
+
+  .list_4 .list__text {
+    max-width: 78.61111vw;
+  }
+
+  .list_5 .list__text {
+    max-width: 59.16667vw;
   }
 
   .quiz {

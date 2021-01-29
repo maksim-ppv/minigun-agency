@@ -297,11 +297,16 @@
     padding-top: vw(178px)
     @media (max-width: 991.98px)
         padding-top: vw2(77px)
+    @media (max-width: 576.98px)
+        padding-top: vw3(63px)
 .list__title
     margin-bottom: vw(19px) 
     @media (max-width: 991.98px)
         margin: auto
         margin-bottom: vw2(10px)
+    @media (max-width: 576.98px)
+        margin: auto
+        margin-bottom: vw3(11px)
 .list__subtitle 
     font-weight: 300
     font-size: vw(24px)
@@ -312,7 +317,12 @@
         font-size: vw2(20px)
         line-height: vw2(24px)
         padding-bottom: vw2(32px)
-
+        max-width: vw2(368px)
+    @media (max-width: 576.98px)
+        font-size: vw3(14px)
+        line-height: vw3(17px)
+        padding-bottom: vw3(41px)
+        max-width: vw3(254px)
 .list__content 
     display: flex
     justify-content: center
@@ -333,6 +343,9 @@
         flex: 0 1 50%
         padding-bottom: vw2(39px)
         justify-content: center
+    @media (max-width: 576.98px)
+        flex: 0 1 100%
+        padding-bottom: vw3(22px)
     img
         width: vw(200px) 
         height: vw(170px)
@@ -341,6 +354,10 @@
             width: vw2(170px)
             height: vw2(144px)
             margin-bottom: vw2(15px)
+        @media (max-width: 576.98px)
+            width: vw3(170px)
+            height: vw3(144px)
+            margin-bottom: vw3(11px)
 .list__text 
     text-align: center
 .list_1
@@ -348,12 +365,16 @@
         max-width: vw(268px) 
         @media (max-width: 991.98px)
             max-width: vw2(221px)
+        @media (max-width: 576.98px)
+            max-width: vw3(300px)
 
 .list_2
     .list__text 
         max-width: vw(320px) 
         @media (max-width: 991.98px)
             max-width: vw2(231px)
+        @media (max-width: 576.98px)
+            max-width: vw3(300px)
 
 
 .list_3
@@ -361,6 +382,8 @@
         max-width: vw(371px) 
         @media (max-width: 991.98px)
             max-width: vw2(230px)
+        @media (max-width: 576.98px)
+            max-width: vw3(252px)
 
 
 .list_4
@@ -368,12 +391,17 @@
         max-width: vw(350px) 
         @media (max-width: 991.98px)
             max-width: vw2(244px)
+        @media (max-width: 576.98px)
+            max-width: vw3(283px)
 
 
 .list_5
-    flex: 0 1 100%
+    @media (max-width: 991.98px)
+        flex: 0 1 100%
     .list__text
         max-width: vw(304px) 
         @media (max-width: 991.98px)
             max-width: vw2(246px)
+        @media (max-width: 576.98px)
+            max-width: vw3(213px)
 
