@@ -1276,7 +1276,7 @@ button {
   position: relative;
   padding-top: 7.5vw;
   padding-bottom: 7.91667vw;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .black-2__img-bg {
