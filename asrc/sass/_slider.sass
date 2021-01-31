@@ -19,28 +19,123 @@
 .slick-arrow
     position: absolute
     top: 50%
-    margin: -30px 0 0 0
+    transform: translateY(-50%)
     z-index: 10
     font-size: 0
-    width: 30px
-    height: 60px 
+    width: vw(70px)
+    height: vw(70px) 
     &.slick-prev
-        left: 0
-        background: url('../img/') 0 0 / 100% no-repeat
+        left: vw(-50px)
+        background: url('../img/icon/arrowLeft.png') 0 0 / 100% no-repeat
     &.slick-next
-        right: 0
-        background: url('../img/') 0 0 / 100% no-repeat
+        right: vw(-50px)
+        background: url('../img/icon/arrowRight.png') 0 0 / 100% no-repeat
 
-    
-    
-.section__slider 
+     
 .white-3 
-.container 
-.title 
-.slider__title 
-.title_b 
+    padding-top: vw(138px)
+    padding-bottom: vw(140px)
+.slider__title
+    padding-bottom: vw(8px) 
 .slider__subtitle 
+    display: block
 .small-subtitle 
+
+
+.slider-container
+    position: relative    
+    width: vw(1250px)
+    margin: auto
 .slider 
 .slider__item 
-.slider__img 
+    padding: vw(100px) vw(30px) vw(100px)
+    
+    
+.slider-item__row 
+    display: flex
+.slider-item__img
+    flex: 1 1 auto
+    position: relative
+    img
+        top: 50%
+        transform: translate(-50%, -50%)
+        left: 52%
+        position: absolute
+        width: vw(800px)
+        height: vw(577px)
+.slider-item__info
+    border: 0.5px solid #D6B56E
+    width: vw(560px)
+    height: vw(400px)
+    padding-top: vw(46px)
+    padding-left: vw(109px) 
+.slider-item__list 
+.slider-item__li
+    text-align: left
+    padding-bottom: vw(11px)
+    font-weight: 500
+    color: #191919 
+    font-size: vw(18px)
+    line-height: 130%
+    strong
+        font-size: vw(20px)
+        line-height: vw(24px)
+
+.slider__button-gold
+    width: vw(336px)
+    height: vw(70px) 
+.popup-link 
+.slider-btn__group 
+.btn-group 
+
+
+.spoiler__title
+    padding-top: vw(59px)
+    padding-bottom: vw(11px)
+.spoiler__subtitle
+    display: block
+    padding-bottom: vw(45px)
+.white-3__items
+    display: flex
+    flex-wrap: wrap
+    margin: 0 vw(-15px)
+    align-items: flex-start
+.white-3__item
+    width: vw(680px)
+    border: 0.5px solid #D6B56E
+    text-align: left
+    margin: 0 vw(15px) vw(30px)
+.white-3__top 
+    padding: vw(25px) vw(20px) vw(25px) vw(39px)
+    display: flex
+    height: vw(80px)
+    cursor: pointer
+    align-items: center
+    position: relative
+    &:before
+        content: ''
+        display: block
+        width: vw(50px)
+        height: vw(50px)
+        right: vw(20px)
+        top: vw(15px)
+        position: absolute
+        transition: 0.3s all
+        background: url('../img/icon/arrowbottom.png') center / contain no-repeat
+        
+    font-weight: 300
+    font-size: vw(20px)
+    line-height: vw(24px)
+    color: #191919
+.white-3__bootom
+    font-weight: 300
+    font-size: vw(18px)
+    line-height: vw(22px)
+    color: #191919
+    display: block
+    padding: vw(29px) vw(159px) vw(35px) vw(39px)
+
+.spoiler_active
+    &:before
+        transition: 0.3s all
+        transform: rotate(180deg) 
