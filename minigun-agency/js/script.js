@@ -2437,8 +2437,8 @@ if($('.slider').length>0){
 	//asNavFor:'',
 	// appendDots:$('.step-slider__controls'),
 	appendArrows:$('.slider-btn__group'),
-	nextArrow:'<button type="button" class="slider__next slick-prev"></button>',
-	prevArrow:'<button type="button" class="slider__prev slick-next"></button>',
+	nextArrow:'<button type="button" class="slider__prev slick-prev"></button>',
+	prevArrow:'<button type="button" class="slider__next slick-next"></button>',
 	// responsive: [{
 	// 	breakpoint: 768,
 	// 	settings: {	adaptiveHeight: true}
