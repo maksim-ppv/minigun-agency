@@ -2356,6 +2356,7 @@ button {
 .black-4 {
   position: relative;
   height: 178.27381vw;
+  overflow: hidden;
   padding-top: 8.27381vw;
   padding-bottom: 9.46429vw;
 }
@@ -2457,8 +2458,62 @@ button {
   position: absolute;
   top: 5%;
   left: 0;
-  width: 26.60714vw;
+  width: 27.79762vw;
   height: 35.2381vw;
+}
+
+.black-4__subtitle_2 {
+  padding-bottom: 3.21429vw;
+}
+
+.man-partners {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 10.11905vw;
+}
+
+.man-partners .man__strings .string-man__li {
+  padding-left: 1.96429vw;
+}
+
+.man-partners .man__strings .string-man__img {
+  width: 4.7619vw;
+  height: 4.7619vw;
+  margin-bottom: 2.20238vw;
+}
+
+.string-man_1 {
+  width: 21.30952vw;
+}
+
+.string-man_2 {
+  width: 22.61905vw;
+}
+
+.string-man_3 {
+  width: 20.11905vw;
+}
+
+.black-4__subtitle_3 {
+  padding-bottom: 3.09524vw;
+}
+
+.black-4__content {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.black-4__content .list_1 .list__text {
+  max-width: 16.96429vw;
+}
+
+.black-4__content .list_3 .list__text {
+  max-width: 15.77381vw;
+}
+
+.black-4__button-gold {
+  margin: auto;
+  margin-top: 1.66667vw;
 }
 
 .hide {
@@ -3630,10 +3685,152 @@ button {
   .black-4__title {
     max-width: 65.10417vw;
     padding-bottom: 0.39063vw;
+    margin: auto;
   }
 
   .black-4__subtitle {
     padding-bottom: 3.77604vw;
+  }
+
+  .string-man__img {
+    width: 7.16146vw;
+    height: 7.16146vw;
+    margin-bottom: 1.17188vw;
+  }
+
+  .string-man__title {
+    font-size: 2.08333vw;
+    line-height: 2.47396vw;
+    padding-bottom: 1.82292vw;
+  }
+
+  .string-man__li img {
+    width: 2.08333vw;
+    height: 1.5625vw;
+  }
+
+  .string-man__li {
+    padding-left: 4.16667vw;
+    margin-bottom: 2.60417vw;
+  }
+
+  .man_1 .string-man__ul {
+    max-width: 58.59375vw;
+  }
+
+  .man_1 .man__img img {
+    width: 35.15625vw;
+    height: 52.73438vw;
+    top: 10%;
+    left: -6%;
+  }
+
+  .man_1 {
+    padding-bottom: 6.11979vw;
+    padding-left: 0;
+  }
+
+  .man_2 .string-man__ul {
+    max-width: 60.54688vw;
+  }
+
+  .man_2 .man__img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 26%;
+            flex: 0 1 26%;
+  }
+
+  .man_2 .man__img img {
+    width: 39.32292vw;
+    height: 52.08333vw;
+    left: -55%;
+    top: 25%;
+  }
+
+  .man_2 {
+    padding-bottom: 11.71875vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+
+  .black-4__title_2 {
+    max-width: 100%;
+  }
+
+  .black-4__subtitle_2 {
+    padding-bottom: 3.38542vw;
+  }
+
+  .man-partners .man__strings .string-man__li {
+    padding-left: 3.77604vw;
+  }
+
+  .man-partners .man__strings .string-man__img {
+    width: 10.41667vw;
+    height: 10.41667vw;
+    margin-bottom: 3.38542vw;
+  }
+
+  .man-partners {
+    padding-bottom: 11.45833vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .string-man_1 {
+    width: 36.97917vw;
+  }
+
+  .string-man_2 {
+    width: 39.0625vw;
+    padding-top: 18.61979vw;
+    margin-left: 7.55208vw;
+  }
+
+  .string-man_3 .string-man__title {
+    max-width: 27.21354vw;
+  }
+
+  .string-man_3 {
+    width: 35.15625vw;
+    margin-top: -17.31771vw;
+  }
+
+  .black-4__title_3 {
+    max-width: 100%;
+  }
+
+  .black-4__subtitle_3 {
+    padding-bottom: 6.51042vw;
+  }
+
+  .black-4__content .list__item img {
+    width: 22.13542vw;
+    height: 18.75vw;
+  }
+
+  .black-4__content .list_1 .list__text {
+    max-width: 22.52604vw;
+  }
+
+  .black-4__content .list_2 .list__text {
+    max-width: 23.4375vw;
+  }
+
+  .black-4__content .list_3 .list__text {
+    max-width: 20.57292vw;
+  }
+
+  .black-4__button-gold {
+    margin-top: 1.43229vw;
   }
 
   .range-info,
@@ -4578,6 +4775,130 @@ button {
 
   .black-4__subtitle {
     padding-bottom: 4.72222vw;
+  }
+
+  .string-man__img {
+    width: 12.5vw;
+    height: 12.5vw;
+    margin-bottom: 2.22222vw;
+  }
+
+  .string-man__title {
+    font-size: 3.88889vw;
+    line-height: 4.72222vw;
+    padding-bottom: 4.72222vw;
+  }
+
+  .string-man__li img {
+    width: 4.44444vw;
+    height: 3.33333vw;
+  }
+
+  .string-man__li {
+    padding-left: 8.05556vw;
+    margin-bottom: 5.55556vw;
+  }
+
+  .man_1 .string-man__ul {
+    max-width: 58.05556vw;
+  }
+
+  .man_1 .man__img img {
+    width: 61.94444vw;
+    height: 89.16667vw;
+    top: 30%;
+    left: -31%;
+  }
+
+  .man_1 {
+    padding-bottom: 9.44444vw;
+  }
+
+  .man_2 .string-man__ul {
+    max-width: 60vw;
+  }
+
+  .man_2 .man__img img {
+    width: 58.61111vw;
+    height: 77.77778vw;
+    left: -100%;
+    top: 58%;
+  }
+
+  .man_2 {
+    padding-bottom: 16.94444vw;
+  }
+
+  .black-4__title_2 {
+    max-width: 83.33333vw;
+  }
+
+  .black-4__subtitle_2 {
+    padding-bottom: 7.77778vw;
+  }
+
+  .man-partners .man__strings .string-man__li {
+    padding-left: 9.16667vw;
+  }
+
+  .man-partners .man__strings .string-man__img {
+    width: 22.22222vw;
+    height: 22.22222vw;
+    margin-bottom: 3.88889vw;
+  }
+
+  .man-partners .man__strings {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 9.16667vw;
+  }
+
+  .man-partners .man__strings:last-child {
+    padding-bottom: 0px;
+  }
+
+  .man-partners {
+    padding-bottom: 18.61111vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .string-man_1 {
+    width: 72.22222vw;
+  }
+
+  .string-man_2 {
+    width: 72.22222vw;
+    margin-left: 0;
+    padding-top: 0;
+  }
+
+  .string-man_3 .string-man__title {
+    max-width: 55vw;
+    text-align: center;
+  }
+
+  .string-man_3 {
+    width: 72.22222vw;
+    margin-top: 0;
+  }
+
+  .black-4__title_3 {
+    max-width: 62.5vw;
+    margin: auto;
+  }
+
+  .black-4__subtitle_3 {
+    padding-bottom: 6.94444vw;
   }
 
   .range-info,
