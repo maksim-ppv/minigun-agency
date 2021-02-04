@@ -59,84 +59,90 @@ if($('.slider').length>0){
 	  
 };
 
-if($('.feedback-slider__items').length>0){
-	$('.feedback-slider__items').slick({
-	// autoplay: true,
-	// infinite: false,
-	dots: false,
-	arrows: true,
-	fade: true,
-	cssEase: 'linear',
-	accessibility:false,
-	slidesToShow:1,
-	speed: 1000,
-	autoplaySpeed: 3000,
-	adaptiveHeight: true,
-	appendArrows:$('.feedback-slider__btns'),
-	nextArrow:'<button type="button" class="step-slider__next"></button>',
-	prevArrow:'<button type="button" class="step-slider__prev"></button>',
 
+
+	$('.advertising__slider').slick({
+		arrows: true,
+		dots: false,
+		slidesToShow: 1,
+		autoplay: false,
+		speed: 1000,
+		autoplaySpeed: 800,
+		appendArrows: $('.advertising__arrows'),
+		// responsive: [
+		// 	{
+		// 		breakpoint: 1024,
+		// 		settings: {
+		// 			adaptiveHeight: true
+		// 		}
+		// 	}
+		// 	{
+		// 		breakpoint: 550,
+		// 		settings: {
+		// 			slidesToShow:1
+		// 		}
+		// 	}
+		// ]
 	});
-	const feedbackNumbersFirst = document.querySelector('.feedback-slider__numbers-first');
-	const feedbackNumbersTwo = document.querySelector('.feedback-slider__numbers-two');
-	feedbackNumbersTwo.textContent = $('.feedback-slider__item').length;
-
-	$('.feedback-slider__btns .slick-arrow').click(function() {
-		var newItem = $('.feedback-slider__items .slick-active').index();
-		console.log('newItem: ', newItem);
-		feedbackNumbersFirst.textContent = ++newItem;
-	  }); 
-};
-
-
-if($('.design__items').length>0){
-	$('.design__items').slick({
-	// autoplay: true,
-	// infinite: false,
-	dots: false,
-	arrows: true,
-	fade: true,
-	cssEase: 'linear',
-	accessibility:false,
-	slidesToShow:1,
-	speed: 1000,
-	autoplaySpeed: 3000,
-	adaptiveHeight: true,
-	appendArrows:$('.design__btns'),
-	nextArrow:'<button type="button" class="step-slider__next"></button>',
-	prevArrow:'<button type="button" class="step-slider__prev"></button>',
-
+	var advertising__slider = $('.advertising__slider');
+	$('.advertising__slider .slick-prev').on('click', function () {
+		$(advertising__slider).slick('slickPrev');
 	});
-	const DesignNumbersFirst = document.querySelector('.design__numbers-first');
-	const DesignNumbersTwo = document.querySelector('.design__numbers-two');
-	const designNumber = document.querySelectorAll('.design__number');
-	const designNumberSpan = document.querySelectorAll('.design__number_span');
-	const DesignNumbersTwoSpan = document.querySelector('.design__numbers-two span');
-	if($('.design__item').length >= 10){
-		DesignNumbersTwo.textContent = $('.design__item').length;
-	} else {
-		DesignNumbersTwoSpan.textContent = $('.design__item').length;
-	}
-
-	$('.design__btns .slick-arrow').click(function() {
-		var newItem = $('.design__items .slick-active').index();
-		var ChangeItem = $('.design__items .slick-active').index();
-		DesignNumbersFirst.textContent = ++ChangeItem;
-        designNumberSpan.forEach((item, i)=>{
-			if(i == newItem && i < 10){
-				item.textContent = ChangeItem;
+	$('.advertising__slider .slick-next').on('click', function () {
+		$(advertising__slider).slick('slickNext');
+	});
+	$('.advertising-reviews__slider').slick({
+		arrows: false,
+		dots: false,
+		slidesToShow: 2.5,
+		autoplay: false,
+		speed: 1000,
+		autoplaySpeed: 800,
+		asNavFor: '.advertising-reviews__slider--big',
+		responsive: [
+			{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 568,
+				settings: {
+					centerMode: true,
+					slidesToShow: 1.53
+				}
 			}
-			if(i == newItem && i >= 10){
-				designNumber.forEach((itemNumber, index)=>{
-					if(index == newItem){
-						itemNumber.textContent = ChangeItem;
-					}
-				})
+		]
+	});
+	$('.advertising-reviews__slider--big').slick({
+		arrows: true,
+		dots: false,
+		slidesToShow: 1,
+		fade: true,
+		autoplay: false,
+		speed: 1000,
+		autoplaySpeed: 800,
+		asNavFor: '.advertising-reviews__slider',
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					fade: true
+				}
 			}
-	})
+			// 	{
+			// 		breakpoint: 550,
+			// 		settings: {
+			// 			slidesToShow:1
+			// 		}
+			// 	}
+		]
+	});
 
-}); 
-};
+
+
+
 
 
 

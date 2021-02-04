@@ -1,11 +1,11 @@
 .black-4
     position: relative
-    height: vw(2995px)
+    height: vw(2915px)
     overflow: hidden
     padding-top: vw(139px)
     padding-bottom: vw(159px)
     @media (max-width: 991.98px)
-        height: vw2(2589px)
+        height: vw2(2510px)
         padding-top: vw2(61px)
         padding-bottom: vw2(92px)
     @media (max-width: 576.98px)
@@ -271,31 +271,48 @@
  
 .black-4__content 
     .list__item
+        @media (max-width: 576.98px)
+            padding-bottom: vw3(40px)
         img
             @media (max-width: 991.98px)
                 width: vw2(170px)
                 height: vw2(144px) 
+            @media (max-width: 576.98px)
+                width: vw3(170px)
+                height: vw3(144px)
     .list_1 
         .list__text 
             max-width: vw(285px)
             @media (max-width: 991.98px)
                 max-width: vw2(173px)
+            @media (max-width: 576.98px)
+                max-width: vw3(224px)
     .list_2 
         .list__text 
             @media (max-width: 991.98px)
                 max-width: vw2(180px)
+            @media (max-width: 576.98px)
+                max-width: vw3(242px)
     .list_3 
         .list__text 
             max-width: vw(265px)
             @media (max-width: 991.98px)
                 max-width: vw2(158px)
+            @media (max-width: 576.98px)
+                max-width: vw3(285px)
     .button 
     .button-gold 
     .popup-link 
     flex-wrap: nowrap
-
+    @media (max-width: 576.98px)
+        flex-wrap: wrap
+        justify-content: center
 .black-4__button-gold 
     margin: auto
     margin-top: vw(28px)
     @media (max-width: 991.98px)
         margin-top: vw2(11px)
+    @media (max-width: 576.98px)
+        margin-top: 0
+        width: vw3(270px)
+        height: vw3(50px)
