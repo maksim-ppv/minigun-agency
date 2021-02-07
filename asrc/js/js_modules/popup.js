@@ -24,7 +24,7 @@ if (popupCloseIcon.length > 0) {
 	for (let index = 0; index < popupCloseIcon.length; index++) {
 		const el = popupCloseIcon[index];
 		el.addEventListener('click', function (e) {
-			popupClose(el.closest('.popup'));
+			popupClose(el.closest('.popup__overlay'));
 			e.preventDefault();
 		});
 	}
@@ -32,7 +32,7 @@ if (popupCloseIcon.length > 0) {
 
 function popupOpen(curentPopup) {
 	if (curentPopup && unlock) {
-		const popupActive = document.querySelector('.popup.open');
+		const popupActive = document.querySelector('.popup__overlay.open');
 		if (popupActive) {
 			popupClose(popupActive, false);
 		} else {
@@ -41,7 +41,7 @@ function popupOpen(curentPopup) {
 		curentPopup.classList.add('open');
 		curentPopup.addEventListener("click", function (e) {
 			if (!e.target.closest('.popup__content')) {
-				popupClose(e.target.closest('.popup'));
+				popupClose(e.target.closest('.popup__overlay'));
 			}
 		});
 	}
@@ -58,10 +58,7 @@ const videoClose = () => {
 
 function popupClose(popupActive, doUnlock = true) {
 	if (unlock) {
-		const popupVideo = document.querySelector('#video');
-		if (popupVideo.classList.contains('open')) {
-			videoClose();
-		};
+
 		popupActive.classList.remove('open');
 		if (doUnlock) {
 			bodyUnLock();
@@ -107,7 +104,7 @@ function bodyUnLock() {
 
 document.addEventListener('keydown', function (e) {
 	if (e.which === 27) {
-		const popupActive = document.querySelector('.popup.open');
+		const popupActive = document.querySelector('.popup__overlay.open');
 		popupClose(popupActive);
 	}
 });
