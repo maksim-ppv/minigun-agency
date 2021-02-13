@@ -104,8 +104,6 @@ function next() {
 	}
 
 	$barWidth += $barLevel;
-	console.log('maxNumber: ', maxNumber);
-	console.log('number: ', number);
 	if (number < maxNumber - 1) {
 		$(".right__text-cont-item").hide();
 		$(".right__text-cont-item").eq(number).fadeIn(1000);
@@ -138,7 +136,6 @@ function next() {
 	}
 	if (testTextNum != 1) {
 		testTextNum -= 1;
-		console.log('testTextNum: ', testTextNum);
 		if (testTextNum < 5 && testTextNum > 1) {
 			testText.text(testTextNum + ' вопросa');
 		} else if (testTextNum < 2) {
@@ -207,7 +204,6 @@ function prev() {
 				+ str + '</p>');
 		}
 		$('.test__btn-block').hide();
-		// console.log(otv);
 	}
 	// if(number === maxNumber - 1){
 	//      $(".test__btn-block").hide();

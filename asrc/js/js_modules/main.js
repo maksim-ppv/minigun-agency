@@ -184,7 +184,6 @@ PresentButtonPrev.addEventListener('click', ()=>{
 
 PresentButtonNext.addEventListener('click', ()=>{
     if(lock == true){
-        console.log('lock: ', lock);
     if(MaxNumber > number){
             number++;
             lock = false
@@ -201,3 +200,12 @@ PresentButtonNext.addEventListener('click', ()=>{
     };
     });
     
+
+
+
+
+// spoiler popup 
+
+$('.popup0__column').click(function(event){
+    $(this).toggleClass('spoiler_active').next().slideToggle(300);
+});

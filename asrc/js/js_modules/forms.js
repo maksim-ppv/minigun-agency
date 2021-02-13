@@ -84,46 +84,16 @@ function showMessageByClass(ms, nums){
 
     function popupThanks(ms) {
 
-        const popupMassive = [...popupFormname];
-        const resultInput = popupMassive.filter(item=> {
-            return item.value !== '';
-        });
-        popupFormname.forEach(item=>{
-            const name = `Спасибо!`;
-            popupThanksTitle.forEach(item=>{
-                item.textContent = name;
-            })
-        })
-        resultInput.forEach(item=>{
-            const name = `Спасибо, ${item.value}!`;
-            popupThanksTitle.forEach(item=>{
-                item.textContent = name;
-            })
-        })
-        popupFormname.forEach(item=>{
-            item.value = '';
-        })
+        
         const msPopup = document.getElementById(ms);
         popupOpen(msPopup);
         
     };
-    if(nums == '4'){
-        let th = $(".popup__fors");
-        $.ajax({
-            type: "POST",
-			url: "https://zox.by/wp-content/themes/zox/mail.php",
-            data: th.serialize()
-        }).done(popupThanks(ms),
-        setTimeout(function() {
-            th.trigger("reset");
-        }, 1000)
-        );
-    };
-    if(nums == '3'){
-        let th = $(".popup__forsm");
+	if(nums == '0'){
+        let th = $(".popup__for_mail_0");
 		$.ajax({
 			type: "POST",
-			url: "https://zox.by/wp-content/themes/zox/mail.php",
+			url: "https://minigun-agency.by/mail.php",
 			data: th.serialize()
         }).done(popupThanks(ms),
         setTimeout(function() {
@@ -131,14 +101,11 @@ function showMessageByClass(ms, nums){
         }, 1000)
         );
 	};
-	if(ms == 'video'){
-		popupThanks(ms);
-	};
 	if(nums == '1'){
         let th = $(".popup__for_mail_1");
 		$.ajax({
 			type: "POST",
-			url: "https://zox.by/wp-content/themes/zox/mail.php",
+			url: "https://minigun-agency.by/mail.php",
 			data: th.serialize()
         }).done(popupThanks(ms),
         setTimeout(function() {
@@ -150,7 +117,7 @@ function showMessageByClass(ms, nums){
         let th = $(".popup__for_mail_2");
 		$.ajax({
 			type: "POST",
-			url: "https://zox.by/wp-content/themes/zox/mail.php",
+			url: "https://minigun-agency.by/mail.php",
 			data: th.serialize()
         }).done(popupThanks(ms),
         setTimeout(function() {
@@ -158,7 +125,54 @@ function showMessageByClass(ms, nums){
         }, 1000)
         );
 	};
-		
+	if(nums == '3'){
+        let th = $(".popup__for_mail_3");
+		$.ajax({
+			type: "POST",
+			url: "https://minigun-agency.by/mail.php",
+			data: th.serialize()
+        }).done(popupThanks(ms),
+        setTimeout(function() {
+            th.trigger("reset");
+        }, 1000)
+        );
+	};
+	if(nums == '4'){
+        let th = $(".popup__for_mail_4");
+		$.ajax({
+			type: "POST",
+			url: "https://minigun-agency.by/mail.php",
+			data: th.serialize()
+        }).done(popupThanks(ms),
+        setTimeout(function() {
+            th.trigger("reset");
+        }, 1000)
+        );
+	};
+	if(nums == '011'){
+        let th = $(".popup__for_mail_011");
+		$.ajax({
+			type: "POST",
+			url: "https://minigun-agency.by/mail.php",
+			data: th.serialize()
+        }).done(popupThanks(ms),
+        setTimeout(function() {
+            th.trigger("reset");
+        }, 1000)
+        );
+	};
+	if(nums == 'quiz'){
+        let th = $(".popup__for_mail_quiz");
+		$.ajax({
+			type: "POST",
+			url: "https://minigun-agency.by/mail.php",
+			data: th.serialize()
+        }).done(popupThanks(ms),
+        setTimeout(function() {
+            th.trigger("reset");
+        }, 1000)
+        );
+	};	
 
 }
 

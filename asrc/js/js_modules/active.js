@@ -180,3 +180,83 @@ function ibg(){
 	ibg();
 
 
+	const ItemSelect = document.querySelectorAll('.content-present-item-4__select');
+
+	ItemSelect.forEach(item=>{
+		const ItemSelectTitle = item.querySelector('.content-present-item-4__select-title');
+		const ItemSelectInput = item.querySelector('input');
+		const selectItem = item.querySelectorAll('.select-item');
+		selectItem.forEach(itemSelect=>{
+			itemSelect.addEventListener('click',()=>{
+				ItemSelectTitle.textContent = itemSelect.textContent;
+				ItemSelectInput.value = itemSelect.textContent;
+				$(ItemSelectTitle).toggleClass('spoiler_active').next().slideToggle(300);
+			})
+		})
+	});
+
+const pageStart = document.querySelector('.page-start');
+const pageMiddle = document.querySelector('.page-middle');
+const pageEnd = document.querySelector('.page-end');
+const nextEnd = document.querySelector('.button-popup_next-end');
+const prevStart = document.querySelector('.button-popup_prev');
+const nextMiddle = document.querySelector('.button-popup_next-middle');
+
+nextMiddle.addEventListener('click',()=>{
+	pageStart.classList.add('hide_abs')
+	pageMiddle.classList.remove('hide_abs')
+});
+prevStart.addEventListener('click',()=>{
+	pageMiddle.classList.add('hide_abs')
+	pageStart.classList.remove('hide_abs')
+});
+nextEnd.addEventListener('click',()=>{
+	pageMiddle.classList.add('hide_abs')
+	pageEnd.classList.remove('hide_abs')
+});
+
+
+// spoiler popup 
+
+$('.popup0__column').click(function(event){
+    $(this).toggleClass('popup_active').next().slideToggle();
+});
+
+
+
+
+
+if($('.sticky-button').length>0){
+	const stickyButton = document.querySelectorAll('.sticky-button');
+	const stickyButtonOver = document.querySelectorAll('.sticky-button__text');
+	
+	stickyButton.forEach(item=>{
+		item.addEventListener('mouseover',()=>{
+			const stickyButtonText = item.querySelector('.sticky-button__text');
+			stickyButtonText.classList.add('sticky-button__text_active')
+			stickyButton.forEach(item=>{
+				item.classList.add('sticky-button_active')
+			})
+		})
+	});
+	stickyButton.forEach(item=>{
+		item.addEventListener('mouseout',()=>{
+			const stickyButtonText = item.querySelector('.sticky-button__text');
+			stickyButtonText.classList.remove('sticky-button__text_active')
+			stickyButton.forEach(item=>{
+				item.classList.remove('sticky-button_active')
+			})		})
+	});
+	stickyButtonOver.forEach(item=>{
+		item.addEventListener('mouseout',()=>{
+			console.log("работает");
+			item.classList.remove('sticky-button__text_active')
+			stickyButton.forEach(item=>{
+				item.classList.remove('sticky-button_active')
+			})
+		})
+	}) 
+};
+
+
+AOS.init();

@@ -165,14 +165,12 @@
 .popup {
 	position: absolute;
 	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	box-sizing: border-box;
+	top: 10vh;
+	transform: translateX(-50%);
 	width: 769px;
 	background: #ffffff;
 	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
 	border-radius: 10px;
-
 	@media (max-width: 1024px) {
 		width: 700px;
 	}
@@ -183,7 +181,6 @@
 
 	@media (max-width: 576px) {
 		width: 350px;
-		height: 605px;
 	}
 
 	@media (max-width: 320px) {
@@ -228,7 +225,7 @@
 		visibility: hidden;
 		transition: 0.3s all;
 		z-index: 50;
-		overflow: hidden;
+		overflow: auto;
 	}
 
 	&__border {
@@ -249,7 +246,6 @@
 
 		@media (max-width: 576px) {
 			width: 330px;
-			height: 585px;
 		}
 
 		@media (max-width: 320px) {
@@ -328,7 +324,7 @@
 		@media (max-width: 576.98px){
 			font-size: 16px;
 			max-width: 280px;
-			padding-top: 38px;
+			padding-top: 28px;
 		}
 	}
 
@@ -342,9 +338,11 @@
 		max-width: 280px;
 		@media (max-width: 991.98px){
 			font-size: 22px;
+			line-height: 26px;
 		}
 		@media (max-width: 576.98px) {
 			font-size: 18px;
+			line-height: 20px;
 		}
 	}
 
@@ -365,52 +363,9 @@
 		border: 1px solid #eeeeee;
 		border-radius: 14px/40px;
 		padding-left: 30px;
-
-		&::-webkit-input-placeholder {
-			font-style: normal;
-			font-weight: normal;
-			@include fluidFontSize(12px, 18px, 1024px, 1920px);
-			color: #919191;
-		}
-
-		&::-moz-placeholder {
-			font-style: normal;
-			font-weight: normal;
-			@include fluidFontSize(12px, 18px, 1024px, 1920px);
-			color: #919191;
-		}
-
-		/* Firefox 19+ */
-		&:-moz-placeholder {
-			font-style: normal;
-			font-weight: normal;
-			@include fluidFontSize(12px, 18px, 1024px, 1920px);
-			color: #919191;
-		}
-
-		/* Firefox 18- */
-		&:-ms-input-placeholder {
-			font-style: normal;
-			font-weight: normal;
-			@include fluidFontSize(12px, 18px, 1024px, 1920px);
-			color: #919191;
-		}
-
-		&:focus::-webkit-input-placeholder {
-			color: transparent;
-		}
-
-		&:focus::-moz-placeholder {
-			color: transparent;
-		}
-
-		&:focus:-moz-placeholder {
-			color: transparent;
-		}
-
-		&:focus:-ms-input-placeholder {
-			color: transparent;
-		}
+		font-size: 18px;
+		color: #919191;
+		width: 100%;
 	}
 
 	& .main-screen__button {
@@ -472,16 +427,16 @@
 		align-items: center;
 		position: relative;
 		cursor: pointer;
-		font-size: 20px;
-		line-height: 24px;
+		font-size: 20px !important;
+		line-height: 24px !important;
 		@media (max-width: 991.98px){
 			height: 70px;
-			font-size: 20px;
+			font-size: 20px !important;
 		}
 		@media (max-width: 576px) {
 			width: 100%;
 			height: 60px;
-			font-size: 16px;
+			font-size: 16px !important;
 		}
 
 		&-call {
@@ -744,9 +699,14 @@
 		padding-top: 18px;
 	}
 }
+.popup__heading_5{
+	@media (max-width: 576.98px){
+		padding-top: 28px;
+	}
+}
 
 .popup__heading span{
-	color: #FFE5AC;
+	color: #b99c5d;
 }
 
 .popup__title_3{
@@ -783,11 +743,146 @@
 
 
 
+
+.popup-quiz{
+	@media (min-width: 991.98px){
+		margin-left: 83.5px;
+	}
+}
+.page-popup{
+	display: flex;
+	flex-direction: column;
+
+}
+.quiz__btn-popup{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 40px;
+}
+
+
+.popup__quiz-block{
+	position: relative;
+}
+
 .popup__wrapper-quiz{
 	margin-bottom: 60px;
 }
 .popup__title-quiz{
 	max-width: 100%;
+}
+
+.button-gold.button-popup{
+	width: 210px; 
+	height: 60px; 
+	cursor: pointer;
+	display: flex;
+	font-size: 18px;
+	line-height: 22px;
+	justify-content: center;
+	align-items: center;
+	@media (max-width: 576.98px){
+		width: 140px;
+		height: 50px;
+	}
+}
+.button-popup_prev{
+	background-color: #fff;
+	width: 140px;
+	height: 60px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	text-transform: uppercase;
+	color: #d6b56e;
+	opacity: .8;
+	border: 1px solid #d6b56e;
+	border-radius: 16px/50px;
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@media (max-width: 576.98px){
+		width: 140px;
+		height: 50px;
+	}
+}
+.quiz-form__range-popup{
+	margin-top: 15px;
+}
+
+.btn-margin-top{
+	margin-top: 23px;
+}
+
+.popup-select{
+	position: absolute;
+	z-index: 1;
+	top: 300px;
+	max-width: 405px;
+	@media (max-width: 991.98px){
+		width: 75%;
+		top: 284px;
+	}
+	@media (max-width: 576.98px){
+		width: 88%;
+		top: 295px;
+
+	}
+}
+
+.popup0-block{
+	display: flex;
+	flex-direction: column;
+}
+.popup0__row{
+	display: flex;
+	flex-direction: column;
+}
+.popup0__column{
+	font-size: 20px;
+	line-height: 24px;
+	color: #191919;
+	padding-left: 20px;
+	margin-bottom: 20px;
+	position: relative;
+	cursor: pointer;
+	@media (max-width: 576.98px){
+		font-size: 18px;
+		line-height: 20px;
+	}
+	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		border-radius: 50%;
+		border: 0.5px solid #919191
+	}
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: -2px;
+		top: 34%;
+		transform: translateY(-50%);
+		background: transparent;
+	}
+	
+}
+.popup0__column.active{
+	&:after{
+		transition: 0.3s all;
+		background: url('../img/icon/okey.svg') center / contain no-repeat;
+	}
+
 }
 
 .open {
