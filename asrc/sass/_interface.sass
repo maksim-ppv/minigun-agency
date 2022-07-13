@@ -1,20 +1,4 @@
-$vw-viewport: 1680 
-$vw-viewport2: 768 
-$vw-viewport3: 360 
-    
-@function vw($font)
-    $vw-content: $vw-viewport*0.01*1px
-    @return $font / $vw-content*1vw
-@function vw2($font)
-    $vw-content: $vw-viewport2*0.01*1px
-    @return $font / $vw-content*1vw
-@function vw3($font)
-    $vw-content: $vw-viewport3*0.01*1px
-    @return $font / $vw-content*1vw
-
-
-
-      
+     
     
 *
     box-sizing: border-box
@@ -23,25 +7,39 @@ $vw-viewport3: 360
 body
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
     height: 100%
-    font-family: Gilroy
-    font-weight: 400
-    font-size: vw(20px)
+    font-family: 'Inter', sans-serif
+    font-family: 'Montserrat', sans-serif 
+    font-size: 20px
     color: #ffffff
-    // overflow-x: hidden
+
 .overflow-hidden
     width: 100%
     overflow: hidden
 .lock
     overflow: hidden
 .container
-    width: vw(1400px)
-    margin: auto 
+    max-width: 1600px
+    margin: 0px auto  
+    position: relative
+@media (max-width: 1600px)
+    .container
+        max-width: 1300px
+        margin: 0px auto  
+@media (max-width: 1400px)
+    .container
+        max-width: 1100px
+        margin: 0px auto  
+@media (max-width: 1199px)
+    .container
+        max-width: 960px
+        margin: 0px auto  
 @media (max-width: 991px)
     .container
-        width: vw2(660px)
-@media (max-width: 568px)
+        max-width: 750px
+@media (max-width: 768px)
     .container
-        width: vw3(320px)
+        min-width: 100%
+        padding: 0 10px
 button:active, button:focus
     outline: none !important
 
@@ -75,120 +73,6 @@ button
         opacity: 0
         visibility: hidden
 
-.title
-    font-weight: 300
-    font-size: vw(36px)
-    line-height: vw(43px)
-    text-align: center
-    position: relative
-    margin-bottom: vw(11px)
-    display: table
-    margin: auto
-    padding: 0px vw(180px)
-    @media (max-width: 991.98px)
-        font-size: vw2(24px)
-        line-height: vw2(29px)
-        padding: 0px vw2(80px)
-        margin: 0px vw2(50px) vw2(6px)
-
-    @media (max-width: 576.98px)
-        font-size: vw3(16px)
-        line-height: vw3(19px)
-        padding: 0px vw3(40px)
-        margin: 0px vw3(20px) vw2(6px)
-
-    strong
-        font-weight: 500
-    &:before
-        content: ''
-        width: vw(125px)
-        top: 60%
-        left: 0
-        height: 2px
-        position: absolute
-        background: url('../img/icon/decor-title.svg') center / cover no-repeat
-    &:after
-        content: ''
-        width: vw(125px)
-        height: 2px
-        top: 60%
-        right: 0
-        transform: rotate(180deg)
-        position: absolute
-        background: url('../img/icon/decor-title.svg') center / cover no-repeat
-.title_no-decor
-    font-weight: 500
-    font-size: vw(36px)
-    line-height: vw(44px)
-    text-align: center
-    color: #191919
-    @media (max-width: 991.98px)
-        font-size: vw2(24px)
-        line-height: vw2(29px)
-    @media (max-width: 576.98px)
-        font-size: vw3(16px)
-        line-height: vw3(19px)
-
-
-       
-    
-.title_w
-    color: #FFFFFF
-.title_b
-    color: #191919
-.small-title
-    font-weight: 500
-    font-size: vw(36px)
-    line-height: vw(44px)
-    @media (max-width: 991.98px)
-        font-size: vw2(24px)
-        line-height: vw2(29px)
-    @media (max-width: 576.98px)
-        font-size: vw3(16px)
-        line-height: vw3(19px)
-
-.subtitle
-    display: block
-    text-align: center
-    margin: auto
-    font-size: vw(32px)
-    line-height: vw(38px)
-    @media (max-width: 991.98px)
-        font-size: vw2(20px)
-        line-height: vw2(24px)
-    @media (max-width: 576.98px)
-        font-size: vw3(14px)
-        line-height: vw3(17px)
-.subtitle_g
-    color: #D6B56E
-.small-subtitle
-    font-weight: 300
-    font-size: vw(30px)
-    line-height: vw(36px)
-    @media (max-width: 991.98px)
-        font-size: vw2(20px)
-        line-height: vw2(24px)
-    @media (max-width: 576.98px)
-        font-size: vw3(14px)
-        line-height: vw3(17px)
-
-
-.text 
-    font-weight: 300
-    font-size: vw(18px)
-    line-height: vw(22px)
-    @media (max-width: 991.98px)
-        font-size: vw2(14px)
-        line-height: vw2(17px)
-    @media (max-width: 576.98px)
-        font-size: vw3(12px)
-        line-height: vw3(14px)
-    strong
-        font-weight: 500
-.text_w
-    color: #FFFFFF
-.text_b
-    color: #191919
 .row
     display: flex
     justify-content: space-between
@@ -196,10 +80,6 @@ button
     @media (max-width: 991.98px)
         flex-wrap: wrap
         justify-content: space-around
-.item__25
-    flex-direction: column
-    display: flex
-    flex: 0 1 25%
 .bg 
     position: absolute
     left: 0
@@ -208,25 +88,7 @@ button
     img
         width: 100%
         object-fit: cover
-.bg1680
-    @media (max-width: 991.98px)
-        display: none
-.bg768
-    @media (min-width: 991.98px)
-        display: none
-    @media (max-width: 576.98px)
-        display: none
-.bg360
-    @media (min-width: 576.98px)
-        display: none
-
-
-$maxWidth: 1920
-
-@mixin adaptiv-font($pcSize, $mobSize) 
-    $addSize: $pcSize - $mobSize
-    $maxWidth: $maxWidth - 320
-    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}))
-
-
+        
+.yellow
+    color: #FFCC00
 

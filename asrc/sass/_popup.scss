@@ -224,7 +224,7 @@
 		opacity: 0;
 		visibility: hidden;
 		transition: 0.3s all;
-		z-index: 50;
+		z-index: 5000;
 		overflow: auto;
 	}
 
@@ -463,7 +463,7 @@
 		background: rgba(0, 0, 0, 0.4);
 		opacity: 0;
 		visibility: hidden;
-		z-index: 50;
+		z-index: 5000;
 		overflow: hidden;
 	}
 

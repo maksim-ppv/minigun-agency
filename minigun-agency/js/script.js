@@ -1128,6 +1128,18 @@ function showMessageByClass(ms, nums){
         }, 1000)
         );
 	};	
+	if(nums == 'popup-exit'){
+        let th = $(".popup__for_mail_popup-exit");
+		$.ajax({
+			type: "POST",
+			url: "https://minigun-agency.by/mail.php",
+			data: th.serialize()
+        }).done(popupThanks(ms),
+        setTimeout(function() {
+            th.trigger("reset");
+        }, 1000)
+        );
+	};
 
 }
 
@@ -4616,6 +4628,81 @@ video.forEach((item,i)=>{
 
 ;
 
+const file = document.querySelector('.file');
+const filePreview = document.querySelector('.file-preview');
+const bady = document.querySelector('body');
+    const formAll = document.querySelectorAll('.form-all');
+    formAll.forEach(form => {
+        form.addEventListener('submit', formSend);
+        async function formSend(e) {
+            e.preventDefault();
+    
+            let error = formValidate(form); 
+    
+            let formData = new FormData(form);
+            if (file) {
+                formData.append('file', file.files[0]);
+            }
+
+        
+            
+                let response = await fetch('https://minigun-agency.by/sendmail.php', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (response.ok) {
+                    form.reset();
+                } else {
+    
+                    alert("Ошибка");
+                }
+        }
+        
+        function formValidate(form) {
+            let error = 0;
+            let formReq = form.querySelectorAll('._req');
+        
+            for (let index = 0; index < formReq.length; index++) {
+                const input = formReq[index];
+                formRemoveError(input);
+        
+                if(input.classList.contains('_email')){
+                    if (emailTest(input)){
+                        formAddError(input);
+                        error++;
+                    } 
+                } else if (input.getAttribute("type") === "checkbox" && input.checked === false) {
+                        formAddError(input);
+                        error++;
+                } else {
+                    if (input.value === ''){
+                        formAddError(input);
+                        error++;
+                    }
+                }
+                
+            }
+            return error;
+        }
+        
+        function formAddError(input) {
+            input.parentElement.classList.add('err');
+            input.classList.add('err');
+        }
+        function formRemoveError(input) {
+            input.parentElement.classList.remove('err');
+            input.classList.remove('err');
+        }
+        
+        function emailTest(input) {
+            return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+        }
+    });
+
+
+
+;
 //MASKS//
 //'+7(999) 999 9999'
 //'+38(999) 999 9999'
@@ -4867,7 +4954,6 @@ if($('.sticky-button').length>0){
 	});
 	stickyButtonOver.forEach(item=>{
 		item.addEventListener('mouseout',()=>{
-			console.log("работает");
 			item.classList.remove('sticky-button__text_active')
 			stickyButton.forEach(item=>{
 				item.classList.remove('sticky-button_active')
@@ -4875,6 +4961,44 @@ if($('.sticky-button').length>0){
 		})
 	}) 
 };
+
+
+
+
+$(window).scroll(function(){
+    if ($(window).scrollTop() > 780) {
+		$('.sticky-buttons').addClass('show');
+    }
+    else {
+		$('.sticky-buttons').removeClass('show');
+    }
+});
+
+
+// scroll 
+$(document).ready(()=> {$(".arrow__link").click(function (e) {var elementClick = $(this).attr("href");var destination = $(elementClick).offset().top;jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);e.preventDefault();return false;});});
+
+
+
+
+var count = 1;
+
+
+    window.setTimeout(function() { // запускаем таймер на 5 минут
+        $("#popup-exit").addClass('open');
+        count++;
+    }, 300000);        
+    $(document).mouseleave(function(e){
+        if ( 1 >= count ) {
+        if (e.clientY < 0) {
+            $("#popup-exit").addClass('open');      
+            $("body").addClass('lock');      
+            count++;
+
+        }    
+    }
+    });
+
 
 
 AOS.init();

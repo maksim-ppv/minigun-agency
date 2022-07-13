@@ -48,13 +48,6 @@ function popupOpen(curentPopup) {
 }
 
 
-const videoClose = () => {
-	const iframe = document.querySelectorAll('.iframe');
-	iframe.forEach(item=>{
-		item.classList.remove('show_rel')
-		item.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
-	})
-}
 
 function popupClose(popupActive, doUnlock = true) {
 	if (unlock) {

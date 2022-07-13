@@ -1,106 +1,92 @@
 <header class="header">
-    <div class="head-bg bg grenade-bg1680"><img src="./img/header/bg.png" alt="" /></div>
-    <div class="head-bg bg grenade-bg768"><img src="./img/header/bg768.png" alt="" /></div>
-    <div class="head-bg bg grenade-bg360"><img src="./img/header/bg360.png" alt="" /></div>
-
-    <div class="header-bg parallax">
-        <img class="parallax-layer bullet_1" data-depth="0.2" src="./img/header/parallax/bullet1.png" alt="" />
-    </div>
-    <div class="header-bg parallax">
-        <img class="parallax-layer rullet_1" data-depth="0.1" src="./img/header/parallax/rullet.png" alt="" />
-    </div>
-
     <div class='container'>
-        <nav class="navbar"> 
-            <a href="/" class="navbar__logo"><img src="img/header/header-logo.png" alt="" /></a>
-            <div data-move="navbar__logo,1,576" class="navbar-slogan"><span>Клиенты для вашего бизнеса с оплатой только за результат </span></div>
-            <div class="navbar__contact">
-                <a href="tel:+375296705637" class="navbar-phone">+375 (29) 670-56-37</a>
-                <a href="#popup1" class="navbar__callback popup-link">Заказать звонок</a>
+        <nav class="navbar">
+            <div class="navbar-item navbar__logo">
+                <a href="/"><img src="img/logo.png" alt="" /></a>
+                <span class="navbar__logo-desription">услуги монтажа
+                    в Минском районе
+                    и Минске </span>
+            </div>
+            <div class="navbar-item navbar__mail">
+                <div class="data mail">
+                    <div class="data__img">
+                        <img src="./img/email.svg" alt="" />
+                    </div>
+                    <span>pro.teplo-system.by</span>
+                </div>
+                <div class="data time">
+                    <div class="data__img">
+                    <img src="./img/clock.svg" alt="" />
+                     </div>
+                    <span>Пн-Пт с 9:00 до 18:00</span>
+
+                </div>
+            </div>
+            <div class="navbar-item navbar__contact">
+                <div class="data phone">
+                    <div class="data__img">
+                    <img src="./img/a1.png" alt="" />
+                     </div>
+                    <a href="tel:+375296705637" class="navbar-phone">+ 375 (29) 362 65 65</a>
+                </div>
+                <div class="data phone">
+                    <div class="data__img">
+                    <img src="./img/mtc.png" alt="" />
+                     </div>
+                    <a href="tel:+375296705637" class="navbar-phone">+ 375 (33) 362 65 65</a>
+
+                </div>
+            </div>
+            <div class="navbar__callback navbar-item">
+                <a href="#popup1" class="navbar__popup popup-link">Заказать звонок</a>
             </div>
         </nav>
-        <div class="header__body">
-            <div class="header__block-1 block-1">
-                    <div class="block-1__bg img__circle"><img src="./img/header/block1/circle.png" alt="" /></div>
-                    <div class="block-1__bg img__macbook"><img src="./img/header/block1/macbook.png" alt="" /></div>
-                <h1 class="block-1__title">Привлечение целевых клиентов без дополнительных расходов
-                    <span>на рекламу, разработку и продвижение</span>
-                </h1>
-                <span class="block-1__subtitle">Работаем на результат, договоренности фиксируем в договоре </span>
-                <div class="strings block-1__strings">
-                    <span class="strings__title">С головой погружаемся в бизнес клиента:</span>
-                    <div class="strings__block">
-                        <div class="string"><img src="./img/icon/okey.svg" alt="" />
-                            <span class="string__text">Анализируем вашу компанию</span>
-                        </div>
-                        <div class="string"><img src="./img/icon/okey.svg" alt="" />
-                            <span class="string__text">Анализируем вашу нишу и регион</span>
-                        </div>
-                        <div class="string"><img src="./img/icon/okey.svg" alt="" />
-                            <span class="string__text">Анализируем ваших конкурентов и их рекламу</span>
-                        </div>     
-                    </div>
+    </div>
+    <div class="header__menu">
+        <div class="container">
+            <div class="menu row">
+                <ul class="menu-items row">
+                    <li class="menu-item">Перечень услуг</li>
+                    <li class="menu-item">Галерея</li>
+                    <li class="menu-item">Преимущества</li>
+                    <li class="menu-item">Этапы работы</li>
+                    <li class="menu-item">Контакты</li>
+                </ul>
+                <div class="menu__social">
+                    <a href="" class="social-item"><img class="social-img" src="./img/whatsup.png" alt="" /></a>
+                    <a href="" class="social-item"><img class="social-img" src="./img/tg.png" alt="" /></a>
+                    <a href="" class="social-item"><img class="social-img" src="./img/viber.png" alt="" /></a>
                 </div>
-                <div class="block-1__text">Узнав все особенности, делаем прогноз и озвучиваем стоимость клиента</div>
-                <div class="block-1__buttons">
-                    <a href="#popup" class="button button-gold block-1__button-gold popup-link">Узнать цену клиента</a>
-                    <a href="#popup0" class="button button-transparent popup-link">Посмотреть пример реальных<br> анализов и прогнозов</a>
+                <div class="burger">
+                    <div class="mobile__navbar hide"></div>
+                    <button class="menu-button">
+                        <span class="menu-button__line"></span>
+                        <span class="menu-button__line"></span>
+                        <span class="menu-button__line"></span>
+                    </button>
                 </div>
             </div>
-            <div class="header__block-2 block-2">
-                <h2 class="title block-2__title title_w">Сомневаетесь, <strong>подойдет ли вам такой формат?</strong> </h2>
-                <span class="subtitle block-2__subtitle subtitle_g">Если это о вас, тогда чего вы ждете? Начните получать клиентов! </span>
-                <div class="block-2__content row">
-                    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="0"  class="block-2__item block-2_1">
-                        <img src="./img/header/block2-1.png" alt="" />
-                        <span class="block-2__text text text_w">Вы неоднократно пробовали создавать лендинги и сайты, но <strong>они не окупались</strong></span>
-                    </div>
-                    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="250"  class="block-2__item block-2_2">
-                        <img src="./img/header/block2-2.png" alt="" />
-                        <span class="block-2__text text text_w">Вы ничего <strong>не понимаете в Digital</strong>, современных инструментах продвижения и попросту <strong>боитесь "слить" бюджет</strong> </span>
-                    </div>
-                    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="500"  class="block-2__item block-2_3">
-                        <img src="./img/header/block2-3.png" alt="" />
-                        <span class="block-2__text text text_w">Вы хотите <strong>протестировать новое направление</strong>, перед тем как вкладываться в разработку</span>
-                    </div>
-                    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="750"  class="block-2__item block-2_4">
-                        <img src="./img/header/block2-4.png" alt="" />
-                        <span class="block-2__text text text_w">У вас есть действующий сайт, но вы хотите <strong>дополнительных клиентов в пик сезона</strong></span>
-                    </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header__content">
+            <div class="header__main">
+                <h1 class="header__title">Монтаж систем отопления</h1>
+                <div class="header__subtitle">с <span class="yellow">поэтапной оплатой</span> за проделанную работу</div>
+                <div class="header__points">
+                    <div class="header__point"><img src="./img/Okey.svg" alt="" /><span>Гарантия<br> качества</span></div>
+                    <div class="header__point"><img src="./img/Okey.svg" alt="" /><span>7 лет опыта в сфере<br> монтажа отопления </span></div>
+                    <div class="header__point"><img src="./img/Okey.svg" alt="" /><span>Послегарантийный сервис</span></div>
                 </div>
-                <div class="block-2__button">
-                    <a href="#popup2" class="button button-gold block-2__button-gold popup-link">Получить клиентов</a>
+                <div class="header__forms">
+                    <span class="header__forms-title">Получите расчёт от менеджера</span>
+                    <form action="">
+                        <input type="tel" class="input-phone header__phone    form__inputs phone _req form__wish" placeholder="Введите номер телефона" required>
+                        <button type="submit" class="header__button button">Заказать консультацию</button>
+                    </form>
                 </div>
             </div>
-            <div class="header__block-3 block-3">
-                <h2 class="title block-3__title title_w">5 причин того, что <strong>вам нужна лидогенерация</strong> </h2>
-                <div class="block-1__bg img__nikolaev"><img src="./img/header/Nikolaev.png" alt="" /></div>
-                <div class="block-1__bg img__nikolaev1028"><img src="./img/header/nikolaev1028.png" alt="" /></div>
-                <div class="block-1__bg img__nikolaev420"><img src="./img/header/nikolaev420.png" alt="" /></div>
-
-                <div class="block-3__content row">
-                    <div class="block-3__item block-3_1">
-                        <img src="./img/header/1problem.png" alt="" />
-                        <span class="block-3__text text text_w">Вы всегда <strong>нацелены на результат</strong></span>
-                    </div>
-                    <div class="block-3__item block-3_2">
-                        <img src="./img/header/2problem.png" alt="" />
-                        <span class="block-3__text text text_w">Вы хотите видеть и понимать,  <strong>за что платите</strong></span>
-                    </div>
-                    <div class="block-3__item block-3_3">
-                        <img src="./img/header/3problem.png" alt="" />
-                        <span class="block-3__text text text_w">Вам нужны  <strong>только целевые заинтересованные клиенты</strong></span>
-                    </div>
-                    <div class="block-3__item block-3_4">
-                        <img src="./img/header/4problem.png" alt="" />
-                        <span class="block-3__text text text_w">У вас <strong>нет времени на изучение</strong> материала о рекламе и продвижении в Интернете</span>
-                    </div>
-                    <div class="block-3__item block-3_5">
-                        <img src="./img/header/5problem.png" alt="" />
-                        <span class="block-3__text text text_w">Вы хотите  <strong>эффективную и налаженную работу отдела продаж</strong></span>
-                    </div>
-                </div>
-            </div>
+            <div class="header__men"><img src="./img/men.png" alt="" /></div>
         </div>
     </div>
 </header>

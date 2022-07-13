@@ -1,15 +1,11 @@
 
 @@include('preloader.js');
+@@include('js_modules/burger.js');
 @@include('js_modules/parallax.js');
-@@include('js_modules/dynamic-adaptiv.js');
-@@include('js_modules/quiz.js');
-@@include('js_modules/forms.js');
-@@include('js_modules/slick.js');
 @@include('js_modules/jquery.inputmask.js');
+@@include('js_modules/slick.js');
 @@include('js_modules/popup.js');
-
 @@include('js_modules/active.js');
-
 
 
 

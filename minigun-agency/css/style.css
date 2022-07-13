@@ -1,50 +1,5 @@
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-Light.eot");
-  src: url("../fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-Regular.eot");
-  src: url("../fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-Medium.eot");
-  src: url("../fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-SemiBold.eot");
-  src: url("../fonts/Gilroy-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-SemiBold.woff") format("woff"), url("../fonts/Gilroy-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-Bold.eot");
-  src: url("../fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy-LightItalic.eot");
-  src: url("../fonts/Gilroy-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-LightItalic.woff") format("woff"), url("../fonts/Gilroy-LightItalic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
+font-family: 'Inter', sans-serif;
+font-family: 'Montserrat', sans-serif;
 
 * {
   padding: 0px;
@@ -157,12 +112,21 @@ h6 {
 }
 
 #cube-loader .caption {
-  margin: 0 auto;
+  margin: auto;
 }
 
 #cube-loader .cube-loader {
   width: 300px;
-  margin: 0 auto;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
@@ -177,13 +141,8 @@ h6 {
 }
 
 #cube-loader .pre2 {
-  width: 10%;
-  position: absolute;
-  left: 50.5%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  width: 150%;
+  margin-left: -10%;
   -webkit-animation: cube 1.5s infinite linear;
           animation: cube 1.5s infinite linear;
 }
@@ -199,25 +158,25 @@ h6 {
 
 @-webkit-keyframes cube {
   0% {
-    -webkit-transform: translate(-50%, -50%) rotate(0deg);
-            transform: translate(-50%, -50%) rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 
   100% {
-    -webkit-transform: translate(-50%, -50%) rotate(360deg);
-            transform: translate(-50%, -50%) rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @keyframes cube {
   0% {
-    -webkit-transform: translate(-50%, -50%) rotate(0deg);
-            transform: translate(-50%, -50%) rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 
   100% {
-    -webkit-transform: translate(-50%, -50%) rotate(360deg);
-            transform: translate(-50%, -50%) rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -528,7 +487,7 @@ button {
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
-  z-index: 50;
+  z-index: 5000;
   overflow: auto;
 }
 
@@ -709,7 +668,7 @@ button {
   background: rgba(0, 0, 0, 0.4);
   opacity: 0;
   visibility: hidden;
-  z-index: 50;
+  z-index: 5000;
   overflow: hidden;
 }
 
@@ -3231,7 +3190,7 @@ button {
   left: 92vw;
   background: -o-linear-gradient(177.13deg, #DAB171 -0.08%, #F3DEAD -0.07%, #F4E6CB 49.2%, #D9BD89 98.48%);
   background: linear-gradient(272.87deg, #DAB171 -0.08%, #F3DEAD -0.07%, #F4E6CB 49.2%, #D9BD89 98.48%);
-  border-radius: 0.41667vw;
+  border-radius: 7px;
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
@@ -3251,7 +3210,7 @@ button {
   position: relative;
   background: -o-linear-gradient(177.13deg, #DAB171 -0.08%, #F3DEAD -0.07%, #F4E6CB 49.2%, #D9BD89 98.48%);
   background: linear-gradient(272.87deg, #DAB171 -0.08%, #F3DEAD -0.07%, #F4E6CB 49.2%, #D9BD89 98.48%);
-  border-radius: 0.41667vw;
+  border-radius: 7px;
   -webkit-transition: 0.5s all;
   -o-transition: 0.5s all;
   transition: 0.5s all;
@@ -3288,22 +3247,23 @@ button {
 }
 
 .sticky-button__block img {
-  padding: 0px 0.17857vw 0.59524vw;
+  padding: 0.17857vw 0.17857vw 0.59524vw;
   border-bottom: 1px solid #DBC9A2;
   width: 2.14286vw;
 }
 
 .sticky-button__text {
-  border-top-left-radius: 14px;
-  border-bottom-left-radius: 14px;
-  font-size: 14px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  font-size: 0.89286vw;
   position: absolute;
   width: 0px;
   z-index: 6;
   padding: 0.59524vw 0.59524vw 0.59524vw 1.19048vw;
   line-height: 120%;
   color: #423A2A;
-  height: 2.97619vw;
+  top: 0;
+  height: 100%;
   opacity: 0;
   right: 0;
   -webkit-transition: 0.5s all;
@@ -3331,9 +3291,10 @@ button {
 }
 
 .sticky-button__text img {
+  padding: 0.17857vw 0.17857vw 0.59524vw;
   position: absolute;
   top: 0.59524vw;
-  right: 0.59524vw;
+  right: 0.47619vw;
   width: 2.14286vw;
 }
 
@@ -3376,11 +3337,11 @@ button {
 }
 
 .sticky-button__text_1 {
-  border-top-right-radius: 14px;
+  border-top-right-radius: 7px;
 }
 
 .sticky-button__text_3 {
-  border-bottom-right-radius: 14px;
+  border-bottom-right-radius: 7px;
 }
 
 .footer {
@@ -5453,6 +5414,11 @@ button {
 @media (max-width: 576.98px) {
   #cube-loader .cube-loader {
     width: 200px;
+  }
+
+  #cube-loader .pre2 {
+    width: 100%;
+    margin-left: 5%;
   }
 
   .title {

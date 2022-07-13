@@ -10,11 +10,14 @@
     background-color: #000000;
     transition: 0.5s;
     & .caption {
-      margin: 0 auto;
+      margin: auto;
     }
     .cube-loader {
       width: 300px;
-      margin: 0 auto;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: relative;
       @media (max-width: 576.98px){
         width: 200px;
@@ -28,12 +31,13 @@
       transform: translate(-50%, -50%);
     }
     .pre2 { 
-      width: 10%;
-      position: absolute;
-      left: 50.5%;
-      top: 50%;
-      transform: translate(-50%, -50%);
+      width: 150%;
+      margin-left: -10%;
       animation: cube 1.5s infinite linear;
+      @media (max-width: 576.98px){
+        width: 100%;
+        margin-left: 5%;
+      }
     }
   };
   #cube-loader.done {
@@ -45,10 +49,10 @@
   
   @keyframes cube {
     0% {
-      transform: translate(-50%, -50%) rotate(0deg);
+      transform: rotate(0deg);
     }
     100% {
-      transform: translate(-50%, -50%) rotate(360deg);
+      transform: rotate(360deg);
     }
 }
 

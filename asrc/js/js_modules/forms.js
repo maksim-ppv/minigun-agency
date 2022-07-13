@@ -1,10 +1,6 @@
 
 // var isMobile = { Android: function () { return navigator.userAgent.match(/Android/i); }, BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); }, iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, Opera: function () { return navigator.userAgent.match(/Opera Mini/i); }, Windows: function () { return navigator.userAgent.match(/IEMobile/i); }, any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
 
-const popupFormname = document.querySelectorAll('.popup__form-name');
-const popupThanksTitle = document.querySelectorAll('.popup-thanks__title');
-
-
 
 //FORMS
 function forms(){
@@ -20,7 +16,9 @@ function forms(){
 					$(this).toggleClass('orderactive');
 				}
     				$(this).parents('.options').find('.option_one').removeClass('active');
+    				$(this).parents('.options').find('input').prop('checked', false);
 					$(this).toggleClass('active');
+                    $(this).find('input').prop('checked', true);
 
 			}
 		}
@@ -49,191 +47,118 @@ function forms(){
 forms();
 
 
+
+
 //VALIDATE FORMS
-$('form button[type=submit]').click(function(){
-	var er=0;
-	var form=$(this).parents('form');
-	var ms=form.data('ms');
-	var nums=form.data('nums');
-$.each(form.find('.req'), function(index, val) {
-	er+=formValidate($(this));
-});
-if(er==0){
-	removeFormError(form);
-	if(ms!=null && ms!=''){
-		showMessageByClass(ms, nums);
-		return false;
-	}
-}else{
-	return false;
-}
-});
-function formValidate(input){
-	var er=0;
-	var form=input.parents('form');
-	if(input.val()=='' || input.val()==input.attr('data-value')){
-		er++;
-		addError(input);
-	}else{
-		removeError(input);
-	}
-	return er;
-}
+// $('form button[type=submit]').click(function(){
+// 	var er=0;
+// 	var form=$(this).parents('form');
+// 	var ms=form.data('ms');
+// 	var nums=form.data('nums');
+// // $.each(form.find('.req'), function(index, val) {
+// // 	er+=formValidate($(this));
+// // });
+// if(er==0){
+// 	if(ms!=null && ms!=''){
+// 		showMessageByClass(ms, nums);
+// 		// return false;
+// 	}
+// }else{
+// 	return false;
+// }
+// });
+// function formValidate(input){
+// 	var er=0;
+// 	var form=input.parents('form');
+// 	if(input.val()=='' || input.val()==input.attr('data-value')){
+// 		er++;
+// 		// addError(input);
+// 	}else{
+// 		// removeError(input);
+// 	}
+// 	return er;
+// }
 
-function showMessageByClass(ms, nums){
-
-    function popupThanks(ms) {
+// function showMessageByClass(ms, nums){
+//     const msPopup = document.getElementById(ms);
+//     popupOpen(msPopup);
+//     function popupThanks(ms) {
 
         
-        const msPopup = document.getElementById(ms);
-        popupOpen(msPopup);
-        
-    };
-	if(nums == '0'){
-        let th = $(".popup__for_mail_0");
-		$.ajax({
-			type: "POST",
-			url: "https://minigun-agency.by/mail.php",
-			data: th.serialize()
-        }).done(popupThanks(ms),
-        setTimeout(function() {
-            th.trigger("reset");
-        }, 1000)
-        );
-	};
-	if(nums == '1'){
-        let th = $(".popup__for_mail_1");
-		$.ajax({
-			type: "POST",
-			url: "https://minigun-agency.by/mail.php",
-			data: th.serialize()
-        }).done(popupThanks(ms),
-        setTimeout(function() {
-            th.trigger("reset");
-        }, 1000)
-        );
-	};
-	if(nums == '2'){
-        let th = $(".popup__for_mail_2");
-		$.ajax({
-			type: "POST",
-			url: "https://minigun-agency.by/mail.php",
-			data: th.serialize()
-        }).done(popupThanks(ms),
-        setTimeout(function() {
-            th.trigger("reset");
-        }, 1000)
-        );
-	};
-	if(nums == '3'){
-        let th = $(".popup__for_mail_3");
-		$.ajax({
-			type: "POST",
-			url: "https://minigun-agency.by/mail.php",
-			data: th.serialize()
-        }).done(popupThanks(ms),
-        setTimeout(function() {
-            th.trigger("reset");
-        }, 1000)
-        );
-	};
-	if(nums == '4'){
-        let th = $(".popup__for_mail_4");
-		$.ajax({
-			type: "POST",
-			url: "https://minigun-agency.by/mail.php",
-			data: th.serialize()
-        }).done(popupThanks(ms),
-        setTimeout(function() {
-            th.trigger("reset");
-        }, 1000)
-        );
-	};
-	if(nums == '011'){
-        let th = $(".popup__for_mail_011");
-		$.ajax({
-			type: "POST",
-			url: "https://minigun-agency.by/mail.php",
-			data: th.serialize()
-        }).done(popupThanks(ms),
-        setTimeout(function() {
-            th.trigger("reset");
-        }, 1000)
-        );
-	};
-	if(nums == 'quiz'){
-        let th = $(".popup__for_mail_quiz");
-		$.ajax({
-			type: "POST",
-			url: "https://minigun-agency.by/mail.php",
-			data: th.serialize()
-        }).done(popupThanks(ms),
-        setTimeout(function() {
-            th.trigger("reset");
-        }, 1000)
-        );
-	};	
+//     };
+//     if(nums == '3'){
+//         let th = $(".popup__for_mail_3");
+// 		$.ajax({
+// 			type: "POST",
+// 			url: "https://zox.by/wp-content/themes/zox/mail.php",
+// 			data: th.serialize()
+//         }).done(popupThanks(ms),
+//         setTimeout(function() {
+//             th.trigger("reset");
+//         }, 1000)
+//         );
+// 	};
+// 	if(nums == '1'){
+// 		let th = $(".popup__for_mail_1");
+// 		console.log('th: ', th.serialize());
+// 		const form = document.querySelector('.form');
+// 		const ww = document.querySelectorAll('.popup__for_mail_1');
+// 		console.log('ww: ', ww);
+// 		let formData = new FormData(form);
+// 		// ww.forEach((item, index)=>{
+// 		// 	formData.append('index', item);
+// 		// });
+// 		console.log('formData: ', formData);
 
-}
+// 		$.ajax({
+// 			type: "POST",
+// 			url: "https://zox.by/wp-content/themes/zox/mail.php",
+// 			data: th.serialize()
+//         }).done(popupThanks(ms),
+//         setTimeout(function() {
+//             th.trigger("reset");
+//         }, 1000)
+//         );
+// 	};
+// 	if(nums == '2'){
+//         let th = $(".popup__for_mail_2");
+// 		$.ajax({
+// 			type: "POST",
+// 			url: "https://zox.by/wp-content/themes/zox/mail.php",
+// 			data: th.serialize()
+//         }).done(popupThanks(ms),
+//         setTimeout(function() {
+//             th.trigger("reset");
+//         }, 1000)
+//         );
+// 	};
+// 	if(nums == '4'){
+// 		let th = document.querySelector('.popup__for_mail_4');
+// 		let formData = new FormData(th);
+// 		// formData.append('image', formImage.files[0]);
+// 		$.ajax({
+// 			type: "POST",
+// 			url: "http://global.minigun.agency/wp-content/themes/GlobalMebel/sendmail.php",
+// 			data: formData
+//         }).done(popupThanks(ms),
+//         setTimeout(function() {
+//             th.trigger("reset");
+//         }, 1000)
+//         );
+// 	};	
+
+// }
 
 
-function addError(input){
-	input.addClass('err');
-}
-function removeFormError(form){
-form.find('.form__generalerror').hide().html('');
-}
-function removeError(input){
-input.removeClass('err');
-}
+// function addError(input){
+// 	input.addClass('err');
+// 	$('.req-phone_message').addClass('err');
+// }
 
-function maskclear(n){
-if(n.val()==""){
-	n.inputmask('remove');
-	if(!n.hasClass('l')){
-		n.val(n.attr('data-value'));
-	}
-	n.removeClass('focus');
-	n.parent().removeClass('focus');
-}
-}
+// function removeError(input){
+// input.removeClass('err');
+// $('.req-phone_message').removeClass('err');
+// }
 
-	//RANGE
-	const range2 = document.querySelectorAll('.range_2');
-	const range3 = document.querySelectorAll('.range_3');
-	
 
-	range2.forEach(item=>{
-		const rangeto = item.querySelector('.rangeto');
-		const rangeControl = item.querySelector('.range_control');
-		if($(rangeControl).length>0){
-			$(rangeControl).slider({
-				range: "min",
-				min: 0,
-				max: 75,
-				value: 0,
-				slide: function( event, ui ){
-					$(rangeto).val(ui.value);
-				}
-			});
-			$(rangeto).val($(rangeControl).slider( "value"));
-	
-		}
-	});
-	range3.forEach(item=>{
-		const rangeto = item.querySelector('.rangeto');
-		const rangeControl = item.querySelector('.range_control');
-		if($(rangeControl).length>0){
-			$(rangeControl).slider({
-				range: "min",
-				min: 0,
-				max: 75,
-				value: 1,
-				slide: function( event, ui ){
-					$(rangeto).val(ui.value);
-				}
-			});
-			$(rangeto).val($(rangeControl).slider( "value"));
-	
-		}
-	})
+

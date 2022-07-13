@@ -5,516 +5,269 @@
 .header
     overflow: hidden
     position: relative
-
+    background: url('../img/bg-header.png') center / cover no-repeat
 //===============================================================
 
-.navbar
-    padding: vw(30px) 0px
+.navbar 
     display: flex
-    justify-content: space-between
+    flex-wrap: wrap
+    justify-content: space-between 
     align-items: center
-    position: relative
-    @media (max-width: 991.98px)
-        padding: vw2(20px) 0px
-    @media (max-width: 576.98px)
-        padding: vw3(10px) 0px
+    padding: 25px 0px
+    @media (max-width: 1400px) 
+        justify-content: space-around
         
+.navbar-item
 .navbar__logo
-    color:#ffffff
-    @media (max-width: 576.98px)
-        display: flex
-        flex-direction: column
-        align-items: center
-        justify-content: center
-    img
-        width: vw(200px)
-        height: vw(50px)
-        @media (max-width: 991.98px)
-            width: vw2(150px)
-            height: vw2(38px)
-        @media (max-width: 576.98px)
-            width: vw3(100px)
-            height: vw3(25px)
-.navbar-slogan
-    flex: 1 1 auto 
-    max-width: vw(284px)
-    font-style: italic
-    font-weight: 300
-    font-size: vw(16px)
-    line-height: vw(19px)
-    text-align: center
-    margin: 0px auto
-    @media (max-width: 991.98px)
-        font-size: vw2(12px)
-        line-height: vw2(14px)
-        max-width: vw2(175px)
-    @media (max-width: 576.98px)
-        font-size: vw3(6px)
-        line-height: vw3(7px)
-        max-width: vw3(100px)
-        padding-top: vw3(4px)
-.navbar__contact 
+    @media (max-width: 1400px) 
+        flex: 1
+        margin: 0px 300px 10px
     display: flex
-    flex-direction: column
-    align-items: flex-end
-.navbar-phone
-    font-weight: bold
-    font-size: vw(20px)
-    line-height: vw(25px)
-    color: #D6B56E
+    max-width: 400px
+    span
+        padding-left: 10px
+        font-weight: 300
+        font-size: 18px
+        line-height: 22px
+.navbar__logo-desription
+    min-width: 182px 
+.navbar__mail 
+.data 
+    display: flex
+    align-items: center
+    padding: 7px 0px
+    font-weight: 300
+    font-size: 20px
+    line-height: 24px
+    @media (max-width: 1199px)
+        font-size: 18px
     @media (max-width: 991.98px)
-        font-size: vw2(16px)
-        line-height: vw2(20px)
-    @media (max-width: 576.98px)
-        font-size: vw3(14px)
-        line-height: vw3(17px)
+        padding: 4px 0px
+    img
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+.data__img
+    padding-left: 50px
+    position: relative
+    
+.mail 
+.time
+    font-size: 18px 
+    @media (max-width: 1199px)
+        font-size: 16px
+        
+.navbar__contact
+.phone
+.navbar-phone 
+    color: #FFCC00 
+    font-weight: 500
+    font-size: 22px
+    @media (max-width: 1199px)
+        font-size: 18px
 .navbar__callback
-    font-size: vw(18px)
-    line-height: vw(22px)
-    border-bottom: 1px dashed #FFFFFF
+    @media (max-width: 767.98px)
+        display: none
+.navbar__popup 
+    border: 1px solid #FFFFFF
+    border-radius: 10px 
+    padding: 20.5px 25px
+    max-width: 217px
+    font-weight: 300
+    font-size: 20px
     color: #FFFFFF
-    @media (max-width: 991.98px)
-        font-size: vw2(14px)
-        line-height: vw2(17px)
-    @media (max-width: 576.98px)
-        font-size: vw3(10px)
-        line-height: vw3(12px)
+    @media (max-width: 1199px)
+        font-size: 16px   
+.popup-link 
+
 
 //===============================================================
 
-.header__body
-    padding: vw(50px) 0px
-    position: relative 
-    @media (max-width: 991.98px)
-        padding: vw2(30px) 0px
-    @media (max-width: 576.98px)
-        padding: vw3(20px) 0px
-        
-.header__block-1 
-.block-1 
+.header__menu 
     position: relative
-    padding-bottom: vw(150px)
-    @media (max-width: 991.98px)
-        padding-bottom: vw2(95px)
-    @media (max-width: 576.98px)
-        padding-bottom: vw3(53px)
-.block-1__bg
-    position: absolute
-    right: 0
-    top: 0
-.img__macbook
-    top: vw(15px)
-    @media (max-width: 991.98px)
-        top: vw2(70px)
-        right: vw2(-50px)
-    @media (max-width: 576.98px)
-        top: vw3(60px)
-        right: vw3(-20px)
-    img
-        width: vw(816px)
-        height: vw(676px)
-        @media (max-width: 991.98px)
-            width: vw2(312px)
-            height: vw2(245px)
-        @media (max-width: 576.98px)
-            width: vw3(170px)
-            height: vw3(140px)
-.img__circle
-    right: vw(40px)
-    @media (max-width: 991.98px)
-        top: vw2(40px)
-        right: vw2(-50px)
-    @media (max-width: 576.98px)
-        right: 0
-        top: vw3(60px)
-    img
-        animation: size 1.5s linear infinite alternate
-        width: vw(660px)
-        height: vw(660px)
-        @media (max-width: 991.98px)
-            width: vw2(312px)
-            height: vw2(270px)
-        @media (max-width: 576.98px)
-            width: vw3(140px)
-            height: vw3(140px)
-.block-1__title 
-    font-weight: bold
-    font-size: vw(50px)
-    line-height: vw(62px)
-    max-width: vw(790px)
-    padding-bottom: vw(47px)
-    @media (max-width: 991.98px)
-        font-size: vw2(28px)
-        line-height: vw2(35px)
-        max-width: vw2(465px)
-        padding-bottom: vw2(31px)
-    @media (max-width: 576.98px)
-        font-size: vw3(18px)
-        line-height: vw3(22px)
-        max-width: vw3(302px)
-        padding-bottom: vw3(16px)
-    span
-        display: block
-        font-weight: 300
-        font-size: vw(40px)
-        line-height: vw(48px)
-        @media (max-width: 991.98px)
-            font-size: vw2(22px)
-            line-height: vw2(26px)
-        @media (max-width: 576.98px)
-            font-size: vw3(16px)
-            line-height: vw3(19px)
-            max-width: vw3(188px)
-.block-1__subtitle
-    font-weight: 300
-    padding-bottom: vw(47px)
-    font-size: vw(28px)
-    line-height: vw(34px)
-    color: #D6B56E
-    display: block
-    max-width: vw(533px)
-    @media (max-width: 991.98px)
-        font-size: vw2(18px)
-        line-height: vw2(22px)
-        padding-bottom: vw2(31px)
-        max-width: vw2(368px)
-    @media (max-width: 576.98px)
-        font-size: vw3(14px)
-        line-height: vw3(17px)
-        padding-bottom: vw3(16px)
-        max-width: vw3(184px)
-.strings
-.block-1__strings
-    padding-bottom: vw(47px)
-    @media (max-width: 991.98px)
-        padding-bottom: vw2(23px)
-    @media (max-width: 576.98px)
-        padding-bottom: vw3(23px)
-.strings__title
-    font-weight: 500
-    font-size: vw(24px)
-    line-height: vw(29px)
-    padding-bottom: vw(15px)
-    display: block
-    @media (max-width: 991.98px)
-        padding-bottom: vw2(13px)
-        font-size: vw2(16px)
-        line-height: vw2(19px)
-    @media (max-width: 576.98px)
-        padding-bottom: vw3(8px)
-        max-width: vw3(167px)
-        font-size: vw3(14px)
-        line-height: vw3(17px)
-.strings__block 
-.string 
-    display: flex
-    align-items: center
-    padding-bottom: vw(10px)
-    @media (max-width: 991.98px)
-        padding-bottom: vw2(18px)
-    @media (max-width: 576.98px)
-        padding-bottom: vw3(10px)
-    &:last-child
-        padding-bottom: 0px
-    img
-        width: vw(21px)
-        height: vw(16px)
-        margin-right: vw(19px)
-        @media (max-width: 991.98px)
-            width: vw2(15px)
-            height: vw2(11px)
-            margin-right: vw2(10px)
-        @media (max-width: 576.98px)
-            width: vw3(12px)
-            height: vw3(9px)
-            margin-right: vw3(10px)
-.string__text 
-    font-weight: 300
-    font-size: vw(20px)
-    line-height: vw(30px)
-    @media (max-width: 991.98px)
-        font-size: vw2(14px)
-    @media (max-width: 576.98px)
-        font-size: vw3(12px)
-.block-1__text
-    font-weight: 300
-    font-size: vw(20px)
-    line-height: vw(24px)
-    color: #D6B56E
-    display: block
-    padding-bottom: vw(25px) 
-    @media (max-width: 991.98px)
-        font-size: vw2(14px)
-        line-height: vw2(17px)
-        padding-bottom: vw2(31px)
-    @media (max-width: 576.98px)
-        font-size: vw3(12px)
-        line-height: vw3(14px)
-        padding-bottom: vw3(13px)
-        max-width: vw3(239px)
-        text-align: center
-        margin: auto
-.block-1__buttons 
-    display: flex
-    @media (max-width: 576.98px)
-        flex-wrap: wrap
-        justify-content: center
-.button 
-    width: vw(350px)
-    height: vw(75px)
-    display: flex
-    align-items: center
-    justify-content: center
-    text-align: center
-    border-radius: 16px/50px
-    position: relative
-    @media (max-width: 991.98px)
-        width: vw2(270px)
-        height: vw2(60px)
-    @media (max-width: 576.98px)
-        width: vw3(245px)
-        height: vw3(45px)
-.button-gold 
-    font-size: vw(20px)
-    line-height: vw(24px)
-    text-transform: uppercase
-    color: #4F4531
-    text-shadow: 0px 1px 0px #FFF3D8
-    background: linear-gradient(180deg, #FFE5AC 0%, #B99C5D 100%)
-    position: relative
-    border: vw(3px) solid #FFE1A0
-    box-shadow: 0 4px 1px 0 #8A774E
-    transition: 0.3s all
-    @media (max-width: 991.98px)
-        font-size: vw2(16px)
-        line-height: vw2(19px)
-    @media (max-width: 576.98px)
-        font-size: vw3(12px)
-        line-height: vw3(14px)
-    &:hover
-        filter: drop-shadow(0px 0px 15px #D6B56E)
-        transition: 0.3s all
-.block-1__button-gold
-    margin-right: vw(24px)
-    @media (max-width: 991.98px)
-        margin-right: vw2(10px)
-    @media (max-width: 576.98px)
-        margin-right: 0
-        margin-bottom: vw3(16px)
-.button-transparent 
-    font-weight: 300
-    font-size: vw(18px)
-    line-height: vw(22px)
-    border: 1px solid #FFFFFF
-    color: #FFFFFF
-    @media (max-width: 991.98px)
-        font-size: vw2(14px)
-        line-height: vw2(17px)
-    @media (max-width: 576.98px)
-        font-size: vw3(12px)
-        line-height: vw3(14px)
-@keyframes size
-    0%
-       transform: scale(1) 
-    100%
-        transform: scale(1.15) 
-        
-
-//====================================================================================================================================
-
-
-
-
-.header__block-2 
-.block-2
-    padding-bottom: vw(126px) 
-    @media (max-width: 991.98px)
-        padding-bottom: vw2(99px)
-    @media (max-width: 576.98px)
-        padding-bottom: vw3(59px)
-.block-2__title
-.block-2__subtitle
-    padding-bottom: vw(59px)
-    @media (max-width: 991.98px)
-        padding-bottom: vw2(61px)
-    @media (max-width: 576.98px)
-        padding-bottom: vw3(31px)
-        max-width: vw3(262px)
-.block-2__content 
-    padding-bottom: vw(59px)
-    @media (max-width: 991.98px)
-        padding-bottom: vw2(55px)
-    @media (max-width: 576.98px)
-        padding-bottom: vw3(36px)
-.block-2__item 
-    align-items: center
-    display: flex
-    flex-direction: column
-    img
-        width: vw(200px)
-        height: vw(170px)
-        @media (max-width: 991.98px)
-            width: vw2(170px)
-            height: vw2(144px)
-        @media (max-width: 576.98px)
-            width: vw3(170px)
-            height: vw3(144px)
-            margin-bottom: vw3(9px)
-        transition: 0.7s all
-        &:hover
-            transform: scale(1.1)
-            transition: 0.7s all
-        
-.block-2_1
-    width: vw(258px)
-    @media (max-width: 991.98px)
-        width: vw2(211px)
-        margin-bottom: vw2(38px)
-    @media (max-width: 576.98px)
-        width: vw3(250px)
-        margin-bottom: vw3(23px)
-.block-2_2
-    width: vw(366px)
-    @media (max-width: 991.98px)
-        width: vw2(280px)
-        margin-bottom: vw2(38px)
-    @media (max-width: 576.98px)
-        width: vw3(240px)
-        margin-bottom: vw3(31px)
-.block-2_3
-    width: vw(279px)
-    @media (max-width: 991.98px)
-        width: vw2(241px)
-    @media (max-width: 576.98px)
-        width: vw3(293px)
-        margin-bottom: vw3(31px)
-
-.block-2_4
-    width: vw(259px)
-    @media (max-width: 991.98px)
-        width: vw2(208px)
-    @media (max-width: 576.98px)
-        width: vw3(300px)
-
-.block-2__text 
-    text-align: center
-.block-2__button 
-    display: flex
-    justify-content: center
-
-.block-2__button-gold 
-    @media (max-width: 991.98px)
-        width: vw2(300px)
-    @media (max-width: 576.98px)
-        width: vw3(245px)
-    
-
-//====================================================================================================================================
-
-
-.header__block-3 
-    position: relative
-.block-3 
-    padding-bottom: vw(140px)
-    @media (max-width: 991.98px)
-        padding-bottom: vw2(80px)
-    @media (max-width: 576.98px)
-        padding-bottom: vw3(450px)
-.block-3__title
-    margin-bottom: vw(118px)
-    @media (max-width: 991.98px)
-        margin-bottom: vw2(42px)
-    @media (max-width: 576.98px)
-        margin-bottom: vw3(40px)
-.block-1__bg 
-.img__nikolaev
-    right: vw(-80px)
-    @media (max-width: 991.98px)
-        display: none
-    img
-        width: vw(840px)
-.img__nikolaev1028
-    @media (min-width: 991.98px)
-        display: none
-    @media (max-width: 576.98px)
-        display: none
-    right: vw2(-80px)
-    top: vw2(50px)
-    img
-        width: vw2(430px)
-.img__nikolaev420
-    @media (min-width: 576.98px)
-        display: none
-    bottom: vw3(0px)
-    top: 54%
-    left: 43%
-    transform: translateX(-50%)
-    right: auto
-    img
-        width: vw3(280px)
-.block-3__content 
-    flex-direction: column
-    justify-content: flex-start
-    align-items: flex-start
-    padding-left: vw(120px)
-    @media (max-width: 576.98px)
-        padding-left: vw3(40px)
+    border-top: 1px solid rgba(255, 255, 255, 0.25)
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25)
+.container 
+.menu 
 .row 
-.block-3__item 
+.menu-items
+    flex: 63%
+    max-width: 1220px
+    justify-content: space-between
+    @media (max-width: 767.98px)
+        display: none
+.menu-item 
+    margin: 5px
+    font-weight: 400
+    font-size: 22px
+    @media (max-width: 1199px)
+        font-size: 18px
+
+.menu__social
+    text-align: right
+    @media (max-width: 767.98px)
+        display: none
+.social-item
+    display: inline-block
+    margin: 15px 0px 15px 25px
+.social-img
+    transition: 0.2s
+.social-img:hover
+    transform: scale(1.2)
+    transition: 0.2s
+        
+
+.burger
+    display: none
+    @media (max-width: 767.98px)
+        display: block
+
+//===============================================================
+
+
+.header__content
     display: flex
-    align-items: center
-    max-width: vw(550px)
-    margin-bottom: vw(85px)
+.header__main 
+    flex: 0.9
+.header__title 
+    font-weight: 600
+    font-size: 66px
+    line-height: 80px
+    margin-top: 127px
+    margin-bottom: 20px
+.header__subtitle 
+    font-weight: 300
+    font-size: 28px
+    line-height: 34px
+    margin-bottom: 80px
+.header__points 
+    display: flex
+.header__point
+    font-weight: 400
+    font-size: 20px
+    line-height: 24px
+    max-width: 270px
     position: relative
-    padding-left: vw(111px)
-    @media (max-width: 991.98px)
-        margin-bottom: vw2(65px)
-        padding-left: vw2(97px)
-    @media (max-width: 576.98px)
-        padding-left: vw3(90px)
-        margin-bottom: vw3(50px)
-    &:last-child
-        margin: 0px 0px 0px 0px
+    padding-left: 55px
+    margin-right: 50px
+    margin-bottom: 82px
     img
-        margin-right: vw(30px)
-        width: vw(80px)
-        height: vw(80px)
         position: absolute
         left: 0
+        top: 0 
+.header__forms
+    margin-bottom: 180px 
+.header__forms-title 
+    font-weight: 500
+    font-size: 22px
+    line-height: 27px
+    margin-bottom: 25px
+    display: inline-block
+.input-phone
+    background: #FFFFFF
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.4)
+    border-radius: 10px 
+    color: rgba(0, 0, 0, 0.38)
+    font-weight: 400
+    font-size: 22px
+    line-height: 27px
+    padding-left: 30px
+.header__phone 
+    margin-right: 20px
+    width: 400px
+    height: 73px
+.form__inputs 
+.phone 
+
+.header__button 
+    width: 400px
+    height: 73px
+    position: relative
+    animation: run 1s infinite
+    //animation-duration: 
+        //2s  время анимации
+    //animation-timing-function: 
+        //ease  
+        //ease-in  
+        //ease-out  
+        //ease-in-out  
+        //linear  
+        //step-start  
+        //step-end  
+        //steps(5, end) - шаги
+    //animation-delay: 
+        //2s - время задержки
+    //animation-direction: 
+        //reverse - обратное воспроизведение 
+        //alternate - меняется направление каждый раз 
+        //alternate-reverse - меняется каждый раз начиная играть с конца
+    //animation-iteration-count: 
+        //infinite - бесконечная  
+        //2 - число раз
+    //animation-fill-mode: 
+        //forwards - применяется последний кадр 
+        //backwards - сохранит стиль первого кадра на протяжении delay 
+        //both - forwards и backwards заданы одновременно
+    //animation-play-state: 
+        //running - играет 
+        //paused - нет
+    &:before
+        content: ''
+        display: block
+        width: 30px
+        height: 19px
         top: 50%
         transform: translateY(-50%)
-        @media (max-width: 991.98px)
-            width: vw2(80px)
-            height: vw2(80px)
-        @media (max-width: 576.98px)
-            width: vw3(80px)
-            height: vw3(80px)
-.block-3__text 
-.block-3_1
-    @media (max-width: 991.98px)
-        max-width: vw2(220px)
-    @media (max-width: 576.98px)
-        max-width: vw3(216px)
-.block-3_2
-    @media (max-width: 991.98px)
-        max-width: vw2(220px)
-    @media (max-width: 576.98px)
-        max-width: vw3(249px)
-.block-3_3
-    max-width: 100%
-    @media (max-width: 991.98px)
-        max-width: vw2(280px)
-    @media (max-width: 576.98px)
-        max-width: vw3(256px)
-.block-3_4
-    @media (max-width: 991.98px)
-        max-width: vw2(310px)
-    @media (max-width: 576.98px)
-        max-width: vw3(278px)
-.block-3_5
-    @media (max-width: 991.98px)
-        max-width: vw2(265px)
-    @media (max-width: 576.98px)
-        max-width: vw3(246px)
-.text 
-.text_w 
+        position: absolute
+        background: url('../img/button-left.svg') center / cover no-repeat
+        animation: run-left linear 1s alternate infinite
+
+    &:after
+        content: ''
+        display: block
+        width: 30px
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
+        height: 19px
+        position: absolute
+        background: url('../img/button-right.svg') center / cover no-repeat
+        animation: run-right linear 1s alternate infinite
+
+.button 
+    font-family: 'Inter'
+    background: linear-gradient(91.82deg, #FFCC00 2.68%, #F4CD40 69.26%), #FFCC00;
+    box-shadow: 4px 5px 0px #D3AC0E
+    border-radius: 10px
+    color: #000000
+    font-weight: 400
+    font-size: 22px
+    line-height: 27px
+    transition: 0.8s
+
+.button:hover
+    transition: 0.5s
+    background: linear-gradient(91.82deg, #FFCC00 2.68%, #F4CD40 69.26%), #FFCC00
+    box-shadow: 0px 4px 71px rgba(245, 218, 110, 0.6), 4px 5px 0px #D3AC0E
+          
+.header__men 
+    display: flex
+    align-items: flex-end
+
+@keyframes run-left
+    0% 
+        left: 3%
+    60%
+        opacity: 1
+    100% 
+        left: 10%
+        opacity: 0
+@keyframes run-right
+    0% 
+        right: 2%
+    60%
+        opacity: 1
+    100% 
+        right: 9%
+        opacity: 0
