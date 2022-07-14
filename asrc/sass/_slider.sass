@@ -1,15 +1,35 @@
-
 .section__slider
     display: block
     text-align: center
+    position: relative
+    width: 90%
+    margin: 0 auto 200px
+    @media (max-width: 991.98px)
+        margin: 0 auto 170px
+
+    @media (max-width: 767.98px)
+        width: 80%
+        margin: 0 auto 150px
+
+    @media (max-width: 576.98px)
+        width: 75%
+        margin: 0 auto 100px
+.slider-one
+    .slick-track
+        align-items: center
 .slider__item
     text-align: center
+    padding: 0px 5px
+    picture
+        img
+            max-width: 100%
+            height: auto
 .slick-slider
     position: relative
-.slick-track,.slick-list
+.slick-track,
+.slick-list
     position: relative
     overflow: hidden
-    width: 100%
 .slick-track
     position: relative
     width: 100%
@@ -22,253 +42,22 @@
     transform: translateY(-50%)
     z-index: 10
     font-size: 0
-    width: vw(70px)
-    height: vw(70px) 
+    width: 60px
+    height: 60px 
     @media (max-width: 991.98px)
-        width: vw2(50px)
-        height: vw2(50px)
+        width: 40px
+        height: 40px
+.slick-prev
+    @media (max-width: 767.98px)
+        left: -10%
     @media (max-width: 576.98px)
-        width: vw3(40px)
-        height: vw3(40px)
-    &.slick-prev
-        left: vw(-50px)
-        background: url('../img/icon/arrowLeft.png') 0 0 / 100% no-repeat
-    &.slick-next
-        right: vw(-50px)
-        background: url('../img/icon/arrowRight.png') 0 0 / 100% no-repeat
-
-.slider-btn__group 
-    z-index: 5
-.slick-arrow.slider__prev
-    @media (max-width: 991.98px)
-        left: vw2(-5px)
-        top: 25%
+        left: -15%
+    left: -7%
+    background: url('../img/left.png') 0 0 / 100% no-repeat
+.slick-next
+    @media (max-width: 767.98px)
+        right: -10%
     @media (max-width: 576.98px)
-        top: 23%
-        left: vw3(-15px)
-
-.slick-arrow.slider__next
-    @media (max-width: 991.98px)
-        right: vw2(-5px)
-        top: 25%
-    @media (max-width: 576.98px)
-        top: 23%
-        right: vw3(-15px)
-
-.slider
-    z-index: 2
-.white-3 
-    padding-top: vw(138px)
-    padding-bottom: vw(140px)
-    @media (max-width: 991.98px)
-        padding-top: vw2(79px)
-        padding-bottom: vw2(72px)
-    @media (max-width: 576.98px)
-        padding-top: vw3(50px)
-        padding-bottom: vw3(77px)
-.slider__title
-    padding-bottom: vw(8px) 
-    @media (max-width: 991.98px)
-        padding-bottom: vw2(3px)
-    @media (max-width: 576.98px)
-        padding-bottom: vw3(2px)
-.slider__subtitle 
-    display: block
-.small-subtitle 
-
-
-.slider-container
-    position: relative    
-    width: vw(1250px)
-    margin: auto
-    @media (max-width: 991.98px)
-        width: vw2(450px)
-    @media (max-width: 576.98px)
-        width: vw3(300px)
-.slider__item 
-    padding: vw(100px) vw(30px) vw(100px)
-    @media (max-width: 991.98px)
-        padding: vw2(60px) vw2(0px) vw2(50px)
-    @media (max-width: 576.98px)
-        padding: vw3(50px) 0 vw3(50px)
-
-    
-    
-.slider-item__row 
-    display: flex
-    @media (max-width: 991.98px)
-        flex-direction: column
-.slider-item__img
-    flex: 1 1 auto
-    position: relative
-    @media (max-width: 991.98px)
-        flex: 0 1 100%
-        width: 100%
-        height: vw2(214px)
-        display: grid
-    @media (max-width: 576.98px)
-        height: vw3(140px)
-    img
-        top: 50%
-        transform: translate(-50%, -50%)
-        left: 57%
-        position: absolute
-        width: vw(780px)
-        @media (max-width: 991.98px)
-            width: vw2(429px)
-            left: 50%
-        @media (max-width: 576.98px)
-            width: vw3(281px)
-.slider-item__info
-    border: 0.5px solid #D6B56E
-    width: vw(560px)
-    height: vw(400px)
-    padding-top: vw(46px)
-    padding-left: vw(109px) 
-    @media (max-width: 991.98px)
-        width: 99%
-        margin: auto
-        height: vw2(330px)
-        padding-left: vw2(70px)
-        padding-top: vw2(42px)
-    @media (max-width: 576.98px)
-        height: vw3(310px)
-        padding-left: vw3(23px)
-        padding-top: vw3(35px)
-.slider-item__list 
-.slider-item__li
-    text-align: left
-    padding-bottom: vw(11px)
-    font-weight: 500
-    color: #191919 
-    font-size: vw(18px)
-    line-height: 130%
-    strong
-        font-size: vw(20px)
-        line-height: vw(24px)
-    @media (max-width: 991.98px)
-        font-size: vw2(14px)
-        line-height: 100%
-        padding-bottom: vw2(7px)
-        strong
-            font-size: vw2(16px)
-            line-height: vw2(19px)
-    @media (max-width: 576.98px)
-        font-size: vw3(12px)
-        padding-bottom: vw3(9px)
-        strong
-            font-size: vw3(14px)
-            line-height: vw3(17px)
-
-.slider__button-gold
-    width: vw(336px)
-    height: vw(70px) 
-    @media (max-width: 991.98px)
-        margin-top: vw2(15px)
-        width: vw2(300px)
-        height: vw2(60px)
-    @media (max-width: 576.98px)
-        margin-top: vw3(13px)
-.popup-link 
-
-.btn-group 
-
-
-.spoiler__title
-    padding-top: vw(59px)
-    padding-bottom: vw(11px)
-    @media (max-width: 991.98px)
-        padding-bottom: vw2(4px)
-        padding-top: vw2(35px)
-    @media (max-width: 576.98px)
-        padding-top: vw3(15px)
-        padding-bottom: vw3(0px)
-.spoiler__subtitle
-    display: block
-    padding-bottom: vw(45px)
-    @media (max-width: 991.98px)
-        padding-bottom: vw2(34px)
-    @media (max-width: 576.98px)
-        padding-bottom: vw3(18px)
-.white-3__items
-    display: flex
-    flex-wrap: wrap
-    margin: 0 vw(-15px)
-    align-items: flex-start
-    @media (max-width: 991.98px)
-        justify-content: center
-        margin: 0
-
-.white-3__item
-    width: vw(680px)
-    border: 0.5px solid #D6B56E
-    text-align: left
-    margin: 0 vw(15px) vw(30px)
-    @media (max-width: 991.98px)
-        width: vw2(480px)
-        margin: 0 0 vw2(21px) 0
-        &:last-child
-            margin: 0px 0px 0px 0px
-    @media (max-width: 576.98px)
-        width: vw3(290px)
-        margin-bottom: vw3(18px)
-        &:last-child
-            margin: 0px 0px 0px 0px
-.white-3__top 
-    padding: 0 vw(20px) 0 vw(39px)
-    display: flex
-    height: vw(80px)
-    cursor: pointer
-    align-items: center
-    position: relative
-    &:before
-        content: ''
-        display: block
-        width: vw(50px)
-        height: vw(50px)
-        right: vw(20px)
-        top: vw(15px)
-        position: absolute
-        transition: 0.3s all
-        background: url('../img/icon/arrowbottom.png') center / contain no-repeat
-        @media (max-width: 991.98px)
-            width: vw2(35px)
-            height: vw2(35px)
-            top: vw2(13px)
-        @media (max-width: 576.98px)
-            width: vw3(30px)
-            height: vw3(30px)
-            top: vw3(15px)
-    font-weight: 300
-    font-size: vw(20px)
-    line-height: vw(24px)
-    color: #191919
-    @media (max-width: 991.98px)
-        height: vw2(60px)
-        font-size: vw2(14px)
-        line-height: vw2(17px)
-        padding: 0 vw2(50px) 0 vw2(40px)
-    @media (max-width: 576.98px)
-        height: vw3(60px)
-        font-size: vw3(12px)
-        line-height: vw3(14px)
-        padding: 0 vw3(30px) 0 vw3(20px)
-.white-3__bootom
-    font-weight: 300
-    font-size: vw(18px)
-    line-height: vw(22px)
-    color: #191919
-    display: block
-    padding: vw(29px) vw(159px) vw(35px) vw(39px)
-    @media (max-width: 991.98px)
-        font-size: vw2(13px)
-        line-height: vw2(16px)
-        padding: vw2(7px) vw2(125px) vw2(30px) vw2(40px)
-    @media (max-width: 576.98px)
-        font-size: vw3(11px)
-        line-height: vw3(13px)
-        padding: vw3(7px) vw3(40px) vw3(20px) vw3(20px)
-.spoiler_active
-    &:before
-        transition: 0.3s all
-        transform: rotate(180deg) 
+        right: -15%
+    right: -7%
+    background: url('../img/right.png') 0 0 / 100% no-repeat

@@ -3,16 +3,33 @@
     
     
 .section-two
+    position: relative
     overflow: hidden
-    height: 1000px
     background: url('../img/bg2.png') top center / cover no-repeat
     padding-top: 170px
+    @media (max-width: 1199px)
+        padding-top: 150px
+    @media (max-width: 991.98px)
+        padding-top: 130px
+    @media (max-width: 767.98px)
+        padding-top: 80px
 .keys-block
     background: url('../img/keys.png') center right / cover no-repeat
     border-radius: 30px
     padding: 47px 30px 68px 28%
     max-width: 1148px
     margin: auto
+    margin-bottom: 144px
+    @media (max-width: 1600px)
+        padding: 47px 30px 68px 35%
+        margin-bottom: 124px
+    @media (max-width: 1199px)
+        padding: 47px 30px 68px 28%
+        margin-bottom: 100px        
+    @media (max-width: 991.98px)
+        padding: 5% 10%
+        margin-bottom: 60px
+
 .key-block 
 .key__title
     display: inline-block 
@@ -23,11 +40,95 @@
     background: rgba(255, 255, 255, 0.51)
     border-radius: 10px
     margin-bottom: 41px
+    @media (max-width: 991.98px)
+        font-size: 20px
+        padding: 15px 40px
+    @media (max-width: 576.98px)
+        width: 100%
+        padding: 15px 5px
+        text-align: center
 .key__description
     font-weight: 400
     font-size: 30px
     line-height: 37px
     margin-bottom: 45px
+    @media (max-width: 991.98px)
+        font-size: 25px
 .key__popup
     display: inline-block
     padding: 22.5px 54px
+    @media (max-width: 576.98px)
+        padding: 15px 5px
+
+//===============================================================
+
+
+
+.title-one
+    margin-bottom: 74px
+    @media (max-width: 1199px)
+        margin-bottom: 60px
+    @media (max-width: 991.98px)
+        margin-bottom: 40px
+    @media (max-width: 767.98px)
+        margin-bottom: 30px
+    .title-block  
+        @media (max-width: 576.98px)
+            max-width: 300px
+.principle-blocks
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    align-items: center 
+    margin-bottom: 133px
+    @media (max-width: 1600px)
+        margin-bottom: 124px
+    @media (max-width: 1199px)
+        margin-bottom: 100px        
+    @media (max-width: 991.98px)
+        margin-bottom: 60px
+    @media (max-width: 576.98px)
+        justify-content: center
+.principle__item
+    margin: 0px 10px 20px 10px
+    display: flex
+    width: 500px
+    @media (max-width: 576.98px)
+        align-items: center
+        flex-direction: column
+        justify-content: center 
+.principle__img 
+.principle__text
+    color: #000000
+    @media (max-width: 576.98px)
+        text-align: center 
+.principle__title
+    font-weight: 500
+    font-size: 24px
+    line-height: 29px
+    display: block 
+    @media (max-width: 767.98px)
+        font-size: 20px
+.principle__desription
+    font-weight: 400
+    font-size: 18px
+    line-height: 22px 
+    @media (max-width: 767.98px)
+        font-size: 16px
+
+
+//===============================================================
+
+
+
+.title-two
+    margin-bottom: 30px 
+    .title-block  
+.subtitle-two 
+    margin-bottom: 100px
+    @media (max-width: 991.98px)
+        margin-bottom: 80px
+    @media (max-width: 767.98px)
+        margin-bottom: 60px
+    @media (max-width: 576.98px)
+        margin-bottom: 50px

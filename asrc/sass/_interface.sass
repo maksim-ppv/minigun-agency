@@ -54,9 +54,7 @@ button
     display: flex
     flex-direction: column
     overflow: hidden
-.fullscreen
-    min-height: 100vh
-    display: flex
+
 
 
 .ibg
@@ -88,8 +86,56 @@ button
     width: 100%
     img
         width: 100%
-        object-fit: cover
-        
+        object-fit: cover    
 .yellow
-    color: #FFCC00
+    color: #FFCC00 !important
 
+
+
+
+.title
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    font-weight: 500
+    font-size: 40px
+    line-height: 72px
+    color: #000000
+    @media (max-width: 1199px)
+        font-size: 35px
+        line-height: 52px
+    @media (max-width: 991.98px)
+        line-height: 42px
+    @media (max-width: 576.98px)
+        font-size: 32px
+
+.title-block
+    padding: 0px 60px
+    @media (max-width: 991.98px)
+        padding: 0px 30px
+    @media (max-width: 576.98px)
+        padding: 0
+
+    
+
+.line
+    display: block
+    width: 80px
+    height: 3px
+    background-color: #000000
+
+.line.yellow
+    background-color:#FFCC00
+
+.subtitle 
+    display: block
+    font-weight: 400
+    font-size: 24px
+    line-height: 29px
+    text-align: center
+    color: #000000
+    @media (max-width: 991.98px)
+        font-size: 22px
+    @media (max-width: 767.98px)
+        font-size: 20px

@@ -25,26 +25,60 @@ $('input.phone').focusout(function(event) {
 //SLIDERS
 if($('.slider').length>0){
 	$('.slider').slick({
+	autoplay: true,
+	infinite: true,
+	dots: false,
+	arrows: true,
+	fade: false,
+	accessibility:false,
+	slidesToShow: 3,
+	speed: 1000,
+	autoplaySpeed: 3000,
+	adaptiveHeight: false,
+	//asNavFor:'',
+	// appendDots:$('.step-slider__controls'),
+	// appendArrows:$('.slider-btn__group'),
+	// nextArrow:'<button type="button" class="slider__prev slick-prev"></button>',
+	// prevArrow:'<button type="button" class="slider__next slick-next"></button>',
+	responsive: [{
+		breakpoint: 1198,
+		settings: {	slidesToShow: 2}
+		},
+		{
+			breakpoint: 768,
+			settings: {	slidesToShow: 1}
+			}]
+	});
+
+	  
+};
+
+
+if($('.slider-three').length>0){
+	$('.slider-three').slick({
 	// autoplay: true,
 	infinite: true,
 	dots: false,
 	arrows: true,
-	fade: true,
-	cssEase: 'linear',
+	fade: false,
 	accessibility:false,
-	slidesToShow:1,
+	slidesToShow: 3,
 	speed: 1000,
 	autoplaySpeed: 3000,
-	adaptiveHeight: true,
+	adaptiveHeight: false,
 	//asNavFor:'',
 	// appendDots:$('.step-slider__controls'),
-	appendArrows:$('.slider-btn__group'),
-	nextArrow:'<button type="button" class="slider__prev slick-prev"></button>',
-	prevArrow:'<button type="button" class="slider__next slick-next"></button>',
-	// responsive: [{
-	// 	breakpoint: 768,
-	// 	settings: {	adaptiveHeight: true}
-	// 	}]
+	// appendArrows:$('.slider-btn__group'),
+	// nextArrow:'<button type="button" class="slider__prev slick-prev"></button>',
+	// prevArrow:'<button type="button" class="slider__next slick-next"></button>',
+	responsive: [{
+		breakpoint: 1198,
+		settings: {	slidesToShow: 2}
+		},
+		{
+			breakpoint: 768,
+			settings: {	slidesToShow: 1}
+			}]
 	});
 
 	  
@@ -76,7 +110,7 @@ function ibg(){
 	}
 }
 	
-	ibg();
+ibg();
 
 
 	
